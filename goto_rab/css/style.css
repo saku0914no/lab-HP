@@ -1,0 +1,196 @@
+html {
+    font-weight: 400;
+    font-style: normal;
+}
+/* title(header) */
+h1 {
+    text-align: center;
+    font-size: 13px;
+    display: inline-block;
+    /* vertical-align: middle; */
+}
+h2 {
+    /* text-align: center; */
+    font-size: clamp(30px, 5vw, 70px);
+    padding-left: clamp(12px, 2%, 30px);
+    border-bottom: 1px solid #142164;
+    border-left: 15px solid #142164;
+    margin: 30px 10px;
+}
+@media (max-width: 700px) {
+    h2 {
+        margin: 30px 5%;
+    }
+}
+h3 {
+    /* text-align: center; */
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #142164;
+    color: #ffffff;
+    padding: 10px 10%;
+}
+header img {
+    width: 150px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+header nav {
+    display: inline-block;
+}
+@media (max-width: 1100px) {
+    header {
+        display: block;
+        padding: 10px 5%;
+    }
+    header nav {
+        display: block;
+    }
+}
+@media (max-width: 700px) {
+    header nav {
+        display: none;
+    }
+}
+
+/* nav(header) */
+.nav-links li {
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 10px;
+}
+.nav-links li:hover {
+    background-color: #22327e;
+    border-radius: 5px;
+}
+.nav-links .eng {
+    font-size: 0.7em;
+    display: block;
+    margin-top: 2px;
+}
+
+/* humberger-menu */
+.menu-btn {
+    font-size: 1.3em;
+    padding: 13px 20px;
+    /* background-color: #0A0908; */
+    background-color: rgba(10, 9, 8, 0.9);
+    color: #F2F4F3;
+    cursor: pointer;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 990;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-btn::after {
+    content: "menu";
+    font-size: 12px;
+}
+.side-nav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: rgba(10, 9, 8, 0.8);
+    transition: all 800ms cubic-bezier(.8, 0, .33, 1);
+    padding-top: 60px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+.side-nav::-webkit-scrollbar {
+    display: none;
+}
+.side-nav.open {
+    transform: translateX(-250px);
+}
+.side-nav a {
+    padding: 10px 15px;
+    color: #F2F4F3;
+    display: block;
+    transition: 0.3s;
+}
+.side-nav a:hover {
+    background-color: #575757;
+}
+.banner a{
+    padding: 1px 2%;
+    text-align: center;
+}
+.banner img {
+    width: 200px;
+    height: auto;
+}
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+/* PCnav */
+#PCnav {
+    color: white;
+    background-color: #22327e;
+    width: 20%;
+    max-width: 700px;
+    padding: 0 20px;
+    margin: 30px 3%;
+}
+@media (max-width: 700px) {
+    #PCnav {
+        display: none;
+    }
+}
+#PCnav .eng {
+    font-size: 0.8em;
+}
+
+/* link */
+.link{
+    color: #342dff;
+    text-decoration-line: underline;
+}
+.link:visited{
+    color: #3f3f3f;
+}
+.link:hover{
+    color: #e7b500;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    padding: 1% 0;
+    margin: 0 10px 3%;
+}
+@media (max-width: 700px) {
+    section {
+        margin: 0 5% 3%;
+    }
+}
+
+/* footer */
+footer{
+    font-size: 0.7rem;
+    padding: 10px 0;
+    text-align: center;
+    color: #ddd;
+    background-color: #111;
+}

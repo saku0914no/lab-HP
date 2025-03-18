@@ -1,0 +1,23 @@
+/* mainvisual */
+.swiper-slide img {
+    width: 100%;
+    aspect-ratio: 16/6;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* news */
+.news-date {
+    background-color: azure;
+}
+
+.scroll {
+    height: calc(500px - 20vw);
+    padding: 20px 5vw;
+    border: solid 1px black;
+    overflow-y: scroll;
+}
+.scroll::-webkit-scrollbar {
+    display: none;
+}

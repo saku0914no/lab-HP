@@ -1,0 +1,49 @@
+{
+    "newsList": [
+        {
+            "date": "2025/01/02",
+            "newsContent": "盛武航太さんの研究成果が",
+            "linkText": "International Journal of Pharmaceutics",
+            "linkURL": "https://www.sciencedirect.com/journal/international-journal-of-pharmaceutics",
+            "newsContent2": "誌 (IF 5.3) にアクセプト。",
+            "linkText2": "Equilibrium of Monomers, Dimers, and Polymeric Aggregates in the &alpha;-Aryl-Propionic Acid-type Analgesics Naproxen, Ketoprofen, and Ibuprofen: Comparative Study with Oxicam-type Meloxicam and Piroxicam",
+            "linkURL2": "https://doi.org/10.1016/j.ijpharm.2025.125167"
+        },
+        {
+            "date": "2024/12/27",
+            "newsContent": "堀住祐介さん2報目の研究成果が",
+            "linkText": "ACS Chemical Neuroscience",
+            "linkURL": "https://pubs.acs.org/journal/acncdm",
+            "newsContent2": "誌 (IF 4.2) にアクセプト。",
+            "linkText2": "Reactivity of Olanzapine and Tricyclic Antidepressants on the Protective Effects of Trolox on Lipid Peroxidation Evaluated using Fluorescence Anisotropy, Electron Paramagnetic Resonance Spectrometry, and Thermal Analysis",
+            "linkURL2": "https://doi.org/10.1021/acschemneuro.4c00702"
+        },
+        {
+            "date": "2024/12/23",
+            "newsContent": "黒田千尋さんの研究成果が",
+            "linkText": "Langmuir",
+            "linkURL": "https://pubs.acs.org/journal/langd5",
+            "newsContent2": "誌 (IF 3.7) に暫定アクセプト。(2024/12/30 書式修正後正式アクセプト)",
+            "linkText2": "Stability and properties of UV filter avobenzone under its diketo/enol tautomerization induced by molecular encapsulation with &beta;-cyclodextrin",
+            "linkURL2": "https://doi.org/10.1021/acs.langmuir.4c04108"
+        },
+        {
+            "date": "",
+            "newsContent": "",
+            "linkText": "",
+            "linkURL": "",
+            "newsContent2": "",
+            "linkText2": "",
+            "linkURL2": ""
+        },
+        {
+            "date": "",
+            "newsContent": "",
+            "linkText": "",
+            "linkURL": "",
+            "newsContent2": "",
+            "linkText2": "",
+            "linkURL2": ""
+        }
+    ]
+}
