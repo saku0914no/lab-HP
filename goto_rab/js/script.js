@@ -1,4 +1,4 @@
-// insert header and footer
+// insert header and footer and nav
 document.addEventListener("DOMContentLoaded", function () {
     fetch("/insert_data/header_and_footer.html")
         // 取得したデータを文字列に変換
@@ -48,6 +48,20 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error('Error loading header and footer :', error));
 });
+
+// jump page top
+document.addEventListener("scroll", function () {
+    const pageTopBtn = document.getElementById("page_top_btn");
+    if (window.scrollY > 100) {
+        pageTopBtn.style.display = "block";
+    } else {
+        pageTopBtn.style.display = "none";
+    }
+});
+document.querySelector("#page_top_btn").addEventListener("click", function () {
+    // scrollTo = スクロール位置の変更（scrollYはスクロール位置の取得で、操作はしない
+    window.scrollTo({ top: 0, behavior: "smooth" });
+})
 
 // swiper
 // https://qiita.com/TakahiRoyte/items/cdab6fca64da386a690b

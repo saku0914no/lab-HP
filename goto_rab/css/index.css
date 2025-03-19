@@ -18,6 +18,17 @@
     border: solid 1px black;
     overflow-y: scroll;
 }
-.scroll::-webkit-scrollbar {
+/* .scroll::-webkit-scrollbar {
     display: none;
+} */
+
+/* .mark-text {
+    display: center;
+} */
+/* .news-line {
+    
+} */
+
+article li {
+    padding: 10px;
 }
