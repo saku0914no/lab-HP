@@ -1,7 +1,7 @@
 // insert news
 document.addEventListener("DOMContentLoaded", function () {
     let N_list = document.getElementById("news");
-    fetch("/insert_data/index_news.json")
+    fetch("/insert_data/index-html/news.json")
         // 取得したデータをjsonに変換
         .then(response => response.json())
         .then(data => {
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // insert mark
 document.addEventListener("DOMContentLoaded", function () {
     let M_list = document.getElementById("mark");
-    fetch("/insert_data/index_mark.json")
+    fetch("/insert_data/index-html/mark.json")
         // 取得したデータをjsonに変換
         .then(response => response.json())
         .then(data => {

@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const PCnavPosition = document.getElementById('PCnav');
             const PCnavOffset = PCnavPosition.offsetTop;
             window.addEventListener('scroll', function () {
-                if (this.window.pageYOffset > PCnavOffset) {
+                if (window.scrollY > PCnavOffset) {
                     PCnavPosition.classList.add('fitmenu');
                 } else {
                     PCnavPosition.classList.remove('fitmenu');
@@ -76,6 +76,10 @@ document.querySelector("#page_top_btn").addEventListener("click", function () {
 // swiper
 // https://qiita.com/TakahiRoyte/items/cdab6fca64da386a690b
 document.addEventListener("DOMContentLoaded", function () {
+    const swipers = document.querySelectorAll(".swiper");
+    if (swipers.length === 0){
+        return;
+    }
     const swiper = new Swiper(".swiper", {
         // ループさせる
         loop: true,
@@ -96,42 +100,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // const swiper = new Swiper(".swiper");
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const popups = document.querySelectorAll(".popup");
-    if (popups.length === 0){
-        return;
-    }
-    const items = document.querySelectorAll(".item");
-
-    items.forEach(item => {
-        item.addEventListener("click", () => {
-            const popupId = item.getAttribute("data-popup");
-            const popup = document.getElementById(popupId);
-            const closeBtn = popup.querySelector(".close");
-            popup.style.display = "block";
-
-            closeBtn.onclick = function () {
-                popup.style.display = "none";
-                stopAudioAndVideo(popup);
-            }
-
-            window.onclick = function(event) {
-                // popup-contentが一番前に来ているのでpopup == 背景
-                if (event.target == popup) {
-                    popup.style.display = "none";
-                    stopAudioAndVideo(popup);
-                }
-            }
-            
-        });
-    });
-    function stopAudioAndVideo(popup) {
-        const audioAndVideos = popup.querySelectorAll("audio, video");
-        audioAndVideos.forEach(audioAndVideo => {
-            audioAndVideo.pause();
-            audioAndVideo.currentTime = 0;
-        });
-    }
 });

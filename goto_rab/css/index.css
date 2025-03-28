@@ -7,28 +7,14 @@
     display: block;
 }
 
-/* news */
-.news-date {
-    background-color: azure;
-}
-
 .scroll {
     height: calc(500px - 20vw);
     padding: 20px 5vw;
     border: solid 1px black;
     overflow-y: scroll;
 }
-/* .scroll::-webkit-scrollbar {
-    display: none;
-} */
-
-/* .mark-text {
-    display: center;
-} */
-/* .news-line {
-    
-} */
 
 article li {
-    padding: 10px;
+    padding: 20px 0;
+    border-bottom: #9bb5ff 1px solid;
 }
