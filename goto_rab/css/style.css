@@ -11,7 +11,7 @@ h1 {
 }
 h2 {
     /* text-align: center; */
-    font-size: clamp(30px, 5vw, 70px);
+    font-size: clamp(30px, 5vw, 50px);
     padding-left: clamp(12px, 2%, 30px);
     border-bottom: 1px solid #142164;
     border-left: 15px solid #142164;
@@ -95,6 +95,11 @@ header nav {
     flex-direction: column;
     align-items: center;
 }
+@media (min-width: 1200px) {
+    .menu-btn {
+        display: none;
+    }
+}
 .menu-btn::after {
     content: "menu";
     font-size: 12px;
@@ -152,18 +157,22 @@ header nav {
 #PCnav {
     color: white;
     background-color: #22327e;
-    width: 20%;
-    max-width: 700px;
+    width: 25vw;
     padding: 0 20px;
-    margin: 30px 3%;
+    margin-right: 30px;
 }
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
     #PCnav {
         display: none;
     }
 }
 #PCnav .eng {
     font-size: 0.8em;
+}
+.fitmenu {
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 /* link */
