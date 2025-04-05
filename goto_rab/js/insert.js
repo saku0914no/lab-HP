@@ -1,6 +1,12 @@
+// const { response } = require("express");
+
 // insert news
 document.addEventListener("DOMContentLoaded", function () {
     let N_list = document.getElementById("news");
+    if (N_list === null) {
+        console.error("エラー: newsがロードできませんでした。");
+        return;
+    }
     fetch("/insert_data/index-html/news.json")
         // 取得したデータをjsonに変換
         .then(response => response.json())
@@ -42,6 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
 // insert mark
 document.addEventListener("DOMContentLoaded", function () {
     let M_list = document.getElementById("mark");
+    if (M_list === null) {
+        console.error("エラー: markがロードできませんでした。");
+        return;
+    }
     fetch("/insert_data/index-html/mark.json")
         // 取得したデータをjsonに変換
         .then(response => response.json())
@@ -88,4 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error('Error loading mark :', error);
             M_list.textContent = "データの読み込みに失敗しました。";
         });
-})
+});
+
+// introductionsの挿入はpopup.jsに

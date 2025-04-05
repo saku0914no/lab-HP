@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById('PCnav').appendChild(PCnav);
             document.getElementById('footer').appendChild(footer);
 
-            // appendでデータの挿入は完了しているので、あとは普通にdocumentから取ってくる
+            // appendでデータの挿入は完了しているのであとはdocumentから取ってくる
             const openMenuBtn = document.getElementById('openMenuBtn');
             const closeMenuBtn = document.getElementById('closeMenuBtn');
             const sideNav = document.getElementById('sideNav');
