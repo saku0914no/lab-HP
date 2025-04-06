@@ -73,6 +73,9 @@ section {
     margin: 10px 40px 30px;
     list-style-type: circle;
 }
+.jump-page li {
+    margin-bottom: 3px;
+}
 .jump-page li:hover{
     color: #e7b500;
     list-style-type: square;

@@ -151,6 +151,19 @@ header nav {
     border-left: #e7b500 solid 10px;
     transition: 0.3s ease;
 }
+#PCnav ul ul li {
+    font-size: 0.9rem;
+    margin-left: 40px;
+    margin-bottom: 7px;
+    border-left: none;
+    list-style-type: circle;
+}
+#PCnav ul ul li:hover{
+    border-left: none;
+    list-style-type: square;
+    transform: translateX(0.1rem);
+    transition: 0.3s ease;
+}
 .fitmenu {
     position: sticky;
     top: 0;
