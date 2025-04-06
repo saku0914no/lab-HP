@@ -130,7 +130,7 @@ header nav {
     background-color: #22327e;
     width: clamp(200px, 25vw, 300px);
     min-width: 200px;
-    padding: 0 20px;
+    padding: 10px 20px;
     margin-right: 30px;
 }
 @media (max-width: 1000px) {

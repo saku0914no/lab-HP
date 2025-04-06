@@ -20,7 +20,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
+/* popup content */
 .popup-content {
     background-color: #fefefe;
     margin: 7vh auto;
@@ -28,18 +28,45 @@
     border: 1px solid #888;
     width: 80%;
     height: 80%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
-
 .popup-content h3 {
     margin:  10px 5vw 20px;
     border-bottom: 3px solid #142164;
 }
-
-.popup-close {
+.popup-content p {
+    margin:  10px 5vw 20px;
+}
+.popup-content audio {
+    margin-bottom: 5px;
+}
+.popup-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: none;
+    margin-bottom: 5px;
+}
+.popup-content video {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+/* close btn */
+.close {
     color: #aaa;
     float: right;
+    font-size: 28px;
     font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #SDGs {
