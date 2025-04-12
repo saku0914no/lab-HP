@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goto Lab</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/popup.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="humberger"></div>
+    <main>
+        <div id="PCnav"></div>
+        <!----------------------------------------------------------------------------------------------------------->
+        <article>
+            <h2 data-en="overview">研究概要</h2>
+            <!----------------------------------------------------------------------------------------------------------->
+            <section id="SDGs">
+                <button class="item" data-popup="popup-SDGs3"><img src="/images/banner/SDG03.png"
+                        alt="すべての人に健康と福祉を"></button>
+                <div id="popup-SDGs3" class="popup">
+                    <!-- popupの内容 -->
+                    <div class="popup-content">
+                        <button class="popup-close close">&times;</button>
+                        <h4>SGD-3 すべての人に健康と福祉を</h4>
+                        <p style="text-align: left;">
+                            患者さんがお薬について知りたいと思ったとき、
+                            <a href="https://www.nichiyaku.or.jp/kakaritsuke/about.html" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                かかりつけ薬剤師・薬局</a>
+                            に問い合わせすることもできます。
+                            処方された医薬品とは別のものに興味があったり、ジェネリックについて調べたかったり、
+                            なかなか病院や薬局にケチをつけるような質問かなと躊躇うこともあれば、
+                            わざわざ出向くのが煩わしいこともあります。
+                            それで、不特定多数の方に医薬品情報を提供するサイトが開発されており、
+                            利用者からの質問に対する回答は無責任な生成AIに任せるわけにはいきませんので、
+                            様々な試みが行われています。<br>
+                            これとは別に、薬剤師が疑義照会などで代替え医薬品を提案するようなとき、
+                            知識の範囲だけでなく、普遍的・客観的な提案を検討したいという要求があります。
+                            <a href="https://rist.tus.ac.jp/wp-content/uploads/2021/10/c1fe60a424e05a1ba847d8f14a4621d7.pdf"
+                                class="link" target="_blank" rel="noopener noreferrer">
+                                アカデミックディテーリング</a>
+                            ではそのような提案に役立つ情報を共有することを目指しています。<br>
+                            ここで、AIが理想的な提案をしてくれるのか、
+                            どのような限界があるのかを知っておく必要があります。そこで、
+                            <a href="https://ja.wikipedia.org/wiki/説明可能なAI" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                説明可能なAI</a>
+                            の模擬システムとして、
+                            <a href="https://www.wikiwand.com/ja/articles/潜在意味解析" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                潜在意味解析 (LSA)</a>
+                            を用いた
+                            <a href="https://www.info.pmda.go.jp/psearch/html/menu_tenpu_base.html" class="link"
+                                target="_blank" rel="noopener noreferrer">
+                                医薬品添付文書</a>
+                            の比較解析を試み、どのような知識が求められているのか、
+                            医療現場において薬剤師はどのような判断をしているのか(
+                            <a href="https://ja.wikipedia.org/wiki/メタ認知" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                メタ認知</a>
+                            )について研究しています。
+                        </p>
+                        <img src="/images/NSAIDs/Rieito.png" alt="UV Filters" style="width: 100%; max-width: 100%; min-width: 400px; 
+                                height: auto; margin-bottom: 0;">
+                    </div>
+                </div>
+                <!----------------------------------------------------------------------------------------------------------->
+
+                <button class="item" data-popup="popup-SDGs9"><img src="/images/banner/SDG09.png"
+                        alt="産業と技術革新の基盤をつくろう"></button>
+                <div id="popup-SDGs9" class="popup">
+                    <!-- popupの内容 -->
+                    <div class="popup-content">
+                        <button class="popup-close close">&times;</button>
+                        <h4>SGD-9 産業と技術革新の基盤をつくろう</h4>
+                        <p style="text-align: left;">
+                            <a href="https://ja.wikipedia.org/wiki/ポリテトラフルオロエチレン" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                ポリテトラフルオロエチレン(PTFE)</a>
+                            膜は炭素原子とフッ素原子からなる樹脂で、
+                            商品名テフロン&reg;といえば、フライパンなどの撥水加工で有名です。
+                            研究室では溶液サンプルの夾雑物を取り除く
+                            <a href="https://ja.wikipedia.org/wiki/メンブランフィルター" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                メンブランフィルター</a>として利用されています。<br>
+                            私たちのグループは、医薬品モデルとして局所麻酔薬
+                            <a href="https://ja.wikipedia.org/wiki/リドカイン" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                リドカイン(LDC)</a>
+                            をPTFE膜に吸着させると、結晶の融点を測定する
+                            <a href="https://ja.wikipedia.org/wiki/示差走査熱量計" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                示差走査熱量測定(DSC)</a>
+                            で測定すると結晶のLDCの融点は343 K(73℃)なのに、
+                            溶媒2-プロパノール (iPA) またはエタノール (EtOH) 中でPTFE膜の吸着すると、
+                            見かけの融点がそれぞれ319 K (46℃)、340 K(67℃)に低下することを発見しました。<br>
+                            融点が低下すると、それだけ物質は水などに溶け出しやすくなりますから、
+                            これは医薬品を溶解させることに利用できるのではないかと考えました。
+                        </p>
+                        <img src="/images/NSAIDs/Lidocaine.png" alt="UV Filters" style="width: 100%; max-width: 100%; min-width: 400px; 
+                                height: auto; margin-bottom: 0;">
+                        <p style="text-align: left;">
+                            純粋な物質では特定の融点を示すはずですが、
+                            どうしてPTFE膜に吸着させるとLDCは見かけの融点が低下するのでしょう。<br>
+                            次の実験を見てください。
+                            これは蛍光物質である
+                            <a href="https://ja.wikipedia.org/wiki/ローダミン" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                ローダミン6G(R6G)</a>、および
+                            <a href="https://ja.wikipedia.org/wiki/フルオレセイン" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                フルオレセイン(FL)</a>
+                            を PTFE膜に吸着させたとき、
+                            <a href="https://ja.wikipedia.org/wiki/紫外線" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                UVC</a>
+                            蛍光(励起波長254 nm)と
+                            <a href="https://ja.wikipedia.org/wiki/紫外線" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                UVA</a>
+                            蛍光(励起波長365 nm)を撮影したものです。
+                            これらの蛍光物質はろ紙ではそのまま吸着しており、蛍光を発していますが、
+                            PTFE膜に吸着させると自然光ではちゃんと赤色、黄色が見えているのに、
+                            蛍光は消えていることがわかります。<br>
+                            この結果は、PTFE膜に吸着した物質は特殊な分子配列になり、
+                            蛍光のエネルギーが消失してしまうことを意味しています。
+                            LDCには蛍光はありませんが、LDCの場合もPTFE膜に吸着すると、
+                            特殊な分子配列になって、結晶構造とは異なっているためにみかけの融点が変化した可能性があります。<br>
+                            そこで、PTFE膜上に吸着した状態の薬物の分子配列を様々な分析機器を用いて解析して、
+                            PTFE膜への吸着が医薬品の皮膚吸収を向上させる可能性を検討しています。
+                        </p>
+                        <img src="/images/NSAIDs/PTFE-FL.png" alt="UV Filters" style="width: 100%; max-width: 100%; min-width: 400px; 
+                                height: auto; margin-bottom: 0;">
+                    </div>
+                </div>
+                <!----------------------------------------------------------------------------------------------------------->
+
+                <button class="item" data-popup="popup-SDGs12"><img src="/images/banner/SDG12.png"
+                        alt="つくる責任、つかう責任"></button>
+                <div id="popup-SDGs12" class="popup">
+                    <!-- popupの内容 -->
+                    <div class="popup-content">
+                        <button class="popup-close close">&times;</button>
+                        <h4>SGD-12 つくる責任、つかう責任</h4>
+                        <p style="text-align: left;">
+                            医薬品の相互作用には薬理学的な相互作用や薬剤学的な相互作用があり、
+                            それらの情報は製薬メーカや薬局間で共有されており、十分な指導が行われています。
+                            医薬品の組み合わせ、さらに健康食品や嗜好品との組み合わせは無限にあって、
+                            薬理学、薬物動態学・薬物代謝などの根拠がある相互作用は新薬でも予想できるでしょう。<br>
+                            けれども、服用した医薬品が十分に吸収されるかという
+                            <a href="https://ja.wikipedia.org/wiki/バイオアベイラビリティ" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                バイオアベイラビリティ(生物学的利用率)
+                            </a>
+                            や体内での物理化学的相互作用となると、総当たりの確認をしようにもキリがありません。<br>
+                            酸性薬物である
+                            <a href="https://ja.wikipedia.org/wiki/非ステロイド性抗炎症薬" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                非ステロイド性抗炎症薬 (NSAIDs)</a> の
+                            <a href="https://ja.wikipedia.org/wiki/イブプロフェン" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                イブプロフェン(IBU)</a>、
+                            <a href="https://ja.wikipedia.org/wiki/ケトプロフェン" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                ケトプロフェン(KET)</a>、
+                            <a href="https://ja.wikipedia.org/wiki/アスピリン" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                アスピリン(ASP)</a>、
+                            <a href="https://ja.wikipedia.org/wiki/ナプロキセン" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                ナプロキセン(NAP)</a>、
+                            <a href="https://ja.wikipedia.org/wiki/ジクロフェナク" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                ジクロフェナク(DIC)</a>、
+                            <a href="https://ja.wikipedia.org/wiki/インドメタシン" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                インドメタシン(IND)</a>
+                            の溶解度に対して、塩基性薬物である狭心症・不整脈や高血圧の治療薬
+                            <a href="https://ja.wikipedia.org/wiki/ジルチアゼム" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                ジルチアゼム(DTZ)</a>
+                            をいっしょに溶解させたときには、次のグラフのようにNSAIDsの溶解度が低下し、
+                            もともと溶解度の低いDICやINDはほとんど溶けなくなります。
+                            これでは医師が処方で期待していた服薬について
+                            <a href="https://ja.wikipedia.org/wiki/コンプライアンス" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                コンプライアンス</a>
+                            が守れなくなります。<br>
+                            製薬メーカも、医療現場の薬剤師も提供する責任、使わせる責任を伴います。
+                            探索研究と比較して研究資金にもならない貧乏な研究ですが、
+                            誰かがやらないといけない研究だと私たちは思います。<br>
+                        </p>
+                        <img src="/images/NSAIDs/NSAIDs-DTZ1.jpg" alt="UV Filters" style="width: 100%; max-width: 100%; min-width: 400px; 
+                                height: auto; margin-bottom: 0;">
+                        <img src="/images/NSAIDs/NSAIDs-DTZ2.jpg" alt="UV Filters" style="width: 100%; max-width: 100%; min-width: 400px; 
+                                height: auto; margin-bottom: 0;">
+                    </div>
+                </div>
+                <!----------------------------------------------------------------------------------------------------------->
+
+                <button class="item" data-popup="popup-SDGs14"><img src="/images/banner/SDG14.png"
+                        alt="海の豊かさを守ろう"></button>
+                <div id="popup-SDGs14" class="popup">
+                    <!-- popupの内容 -->
+                    <div class="popup-content">
+                        <button class="popup-close close">&times;</button>
+                        <h4>SGD-14 海の豊かさを守ろう</h4>
+                        <p style="text-align: left;">
+                            <a href="https://ja.wikipedia.org/wiki/サンスクリーン剤" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                日焼け止め (サンスクリーン剤)</a>
+                            にはクリームやローションなどの製品がありますが、
+                            成分としては紫外線散乱剤と紫外線吸収剤が含まれています。散乱剤は
+                            <a href="https://ja.wikipedia.org/wiki/酸化亜鉛" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                酸化亜鉛</a>や
+                            <a href="https://ja.wikipedia.org/wiki/酸化チタン(IV)" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                酸化チタン(IV)</a>などの白色微粒子で、ノンケミカルとかミネラルと呼ばれます。
+                            一方の吸収剤は紫外線を熱エネルギーに変換する化学物質なのでケミカル成分といい、
+                            白くならず塗布後のテクスチャーも気になりませんが、化学的な刺激に弱い人もいます。
+                            紫外線吸収剤には様々な化学物質が開発されています。
+                            <a href="https://ja.wikipedia.org/wiki/ベンゾフェノン" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                オキシベンゾン</a>や
+                            <a href="https://ja.wikipedia.org/wiki/オクトクリレン" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                オクトクリレン</a>などには
+                            <a href="https://icriforum.org/" class="link" target="_blank" rel="noopener noreferrer">
+                                サンゴを白化させ、死滅させる危険性がある</a>
+                            ことが報告されています。<br>
+                            このためハワイ、フロリダ、米領バージン諸島、パラオなどは持ち込みを禁止しています。<br>
+                            環境のためにできることを一緒に考えましょう。<br>
+                        </p>
+                        <img src="/images/NSAIDs/UV-Filters.png" alt="UV Filters" style="width: 100%; max-width: 100%; min-width: 400px; 
+                                height: auto; margin-bottom: 0;">
+                    </div>
+                </div>
+                <!----------------------------------------------------------------------------------------------------------->
+
+                <button class="item" data-popup="popup-SDGs15"><img src="/images/banner/SDG15.png"
+                        alt="陸の豊かさも守ろう"></button>
+                <div id="popup-SDGs15" class="popup">
+                    <!-- popupの内容 -->
+                    <div class="popup-content">
+                        <button class="popup-close close">&times;</button>
+                        <h4>SGD-15 陸の豊かさも守ろう</h4>
+                        <p style="text-align: left;">
+                            <a href="https://ja.wikipedia.org/wiki/非ステロイド性抗炎症薬" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                非ステロイド性抗炎症薬 (NSAIDs)</a> は
+                            <a href="https://ja.wikipedia.org/wiki/アラキドン酸カスケード" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                アラキドン酸カスケード</a>
+                            を構成する酵素である
+                            <a href="https://ja.wikipedia.org/wiki/シクロオキシゲナーゼ" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                シクロオキシゲナーゼ(COX)</a>を阻害することで抗炎症作用を発現します。
+                            炎症組織で発現が誘導されるCOX
+                            <a href="https://ja.wikipedia.org/wiki/アイソザイム" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                アイソザイム</a>の
+                            <a href="https://ja.wikipedia.org/wiki/シクロオキシゲナーゼ2" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                COX-2</a>
+                            に作用して、消炎鎮痛作用を示しますが、恒常的に発現されているCOX-1にも作用します。
+                            COX-1を阻害すると炎症以外の働きに影響があり、
+                            <a href="https://ja.wikipedia.org/wiki/NSAID潰瘍" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                消化性潰瘍</a>などの副作用が生じます。<br>
+                            <a href="https://ja.wikipedia.org/wiki/ジクロフェナク" class="link" target="_blank"
+                                rel="noopener noreferrer">
+                                ジクロフェナク (商品名ボルタレン)</a>
+                            は、COX-1に対する選択性があまり高くない利点がありますが、腎臓に障害を及ぼすことが知られています。<br>
+                            この作用は生物種ごとに異なり、
+                            <a href="https://royalsocietypublishing.org/doi/10.1098/rstb.2013.0574" class="link"
+                                target="_blank" rel="noopener noreferrer">
+                                アジア猛禽類には致命的な問題を生じる</a>
+                            ことが見出されています。<br>
+                            人間が摂取するための医薬品ですが、廃棄したり排泄物への混入で環境に流出し、汚染します。<br>
+                            これがある種の生物に影響を及ぼしたりする事例があります。<br>
+                            <a href="https://natgeo.nikkeibp.co.jp/nng/article/news/14/2907/" class="link"
+                                target="_blank" rel="noopener noreferrer">
+                                排水中の抗うつ薬がエビの行動に影響を与えてしまう</a>
+                            という報告などもあります。環境のためにできることを一緒に考えましょう。<br>
+                        </p>
+                        <img src="/images/NSAIDs/Voltaren.png" alt="UV Filters" style="width: 100%; max-width: 100%; min-width: 400px; 
+                                height: auto; margin-bottom: 0;">
+                    </div>
+                </div>
+                <!----------------------------------------------------------------------------------------------------------->
+
+                <button class="item" data-popup="popup-SDGs16"><img src="/images/banner/SDG16.png"
+                        alt="平和と公正をすべての人に"></button>
+                <div id="popup-SDGs16" class="popup">
+                    <!-- popupの内容 -->
+                    <div class="popup-content" style="text-align: left">
+                        <button class="popup-close close">&times;</button>
+                        <h4>SGD-16 平和と公正をすべての人に</h4>
+                        <p>
+                            Creative Commons licenses give everyone from individual creators to large institutions a
+                            standardized
+                            way to grant the public permission to use their creative work under copyright law. From the
+                            reuser’s perspective,
+                            the presence of a Creative Commons license on a copyrighted work answers the question, What
+                            can I do with this work? <br>
+                            クリエイティブ・コモンズ・ライセンスは、個人のクリエイターから大規模な機関まで、すべての人に、
+                            著作権法に基づいて創作作品の使用許可を公衆に与えるための標準化された方法を提供します。
+                            再利用者の観点から見ると、著作権で保護された作品にクリエイティブ・コモンズ・ライセンスが存在することは、
+                            「この作品で何ができるのか」という疑問に答えてくれます。
+
+                        <h3>The CC License options</h3>
+                        <p>There are six different license types, listed from most to least permissive here:<br>
+                            ライセンスには6種類あり、最も許容度の高いものから最も許容度の低いものの順にリストされています。</p>
+
+                        <h3>CC BY</h3>
+                        <p>This license enables reusers to distribute, remix, adapt, and build upon the material
+                            in any medium or format, so long as attribution is given to the creator.
+                            The license allows for commercial use. CC BY includes the following elements: <br>
+                            このライセンスでは、再利用者は、作成者に帰属表示が与えられている限り、
+                            あらゆる媒体または形式で素材を配布、リミックス、適応、および構築できます。
+                            ライセンスでは商用利用が許可されています。CC BY には次の要素が含まれます。<br>
+                            BY: credit must be given to the creator. 作成者にクレジットを表示する必要があります。</p>
+
+                        <h3>CC BY-SA</h3>
+                        <p>This license enables reusers to distribute, remix, adapt, and build upon the material
+                            in any medium or format, so long as attribution is given to the creator.
+                            The license allows for commercial use. If you remix, adapt, or build upon the material,
+                            you must license the modified material under identical terms. CC BY-SA includes the
+                            following
+                            elements: <br>
+                            このライセンスでは、再利用者は、作成者に帰属表示が与えられている限り、
+                            あらゆる媒体または形式で素材を配布、リミックス、適応、および構築できます。
+                            ライセンスでは商用利用が許可されています。
+                            素材をリミックス、適応、または構築する場合は、変更された素材を同一の条件でライセンスする必要があります。
+                            CC BY-SA には、以下の要素が含まれます:<br>
+                            BY: credit must be given to the creator. <br>
+                            SA: Adaptations must be shared under the same terms. 改変は、同じ条件で共有する必要があります。</p>
+
+                        <h3>CC BY-NC</h3>
+                        <p>This license enables reusers to distribute, remix, adapt, and build upon the material
+                            in any medium or format for noncommercial purposes only, and only so long as attribution is
+                            given to the creator.
+                            CC BY-NC includes the following elements: <br>
+                            このライセンスにより、再利用者は、非営利目的に限り、作成者にクレジットを与える場合に限り、
+                            あらゆる媒体または形式で素材を配布、リミックス、改変、および構築できます。
+                            CC BY-NC には、以下の要素が含まれます:<br>
+                            BY: credit must be given to the creator. <br>
+                            NC: Only noncommercial uses of the work are permitted. 作品の非営利目的のみの使用が許可されます。</p>
+
+                        <h3>CC BY-NC-SA</h3>
+                        <p>This license enables reusers to distribute, remix, adapt, and build upon the material
+                            in any medium or format for noncommercial purposes only, and only so long as attribution
+                            is given to the creator. If you remix, adapt, or build upon the material,
+                            you must license the modified material under identical terms. CC BY-NC-SA includes the
+                            following
+                            elements: <br>
+                            このライセンスにより、再利用者は、非営利目的に限り、作成者にクレジットを与える場合に限り、
+                            あらゆる媒体または形式で素材を配布、リミックス、改変、および構築できます。
+                            素材をリミックス、改変、または構築する場合は、変更された素材を同一の条件でライセンスする必要があります。
+                            CC BY-NC-SA には、以下の要素が含まれます:<br>
+                            BY: credit must be given to the creator. <br>
+                            NC: Only noncommercial uses of the work are permitted. <br>
+                            SA: Adaptations must be shared under the same terms.</p>
+
+                        <h3>CC BY-ND</h3>
+                        <p>This license enables reusers to copy and distribute the material in any medium or format
+                            in unadapted form only, and only so long as attribution is given to the creator.
+                            The license allows for commercial use. CC BY-ND includes the following elements: <br>
+                            このライセンスにより、再利用者は、改変されていない形式でのみ、
+                            あらゆるメディアまたは形式で素材をコピーおよび配布できます。
+                            ただし、作成者に帰属が与えられている場合に限ります。
+                            ライセンスでは商用利用が許可されます。
+                            CC BY-ND には、次の要素が含まれます:<br>
+                            BY: credit must be given to the creator. <br>
+                            ND: No derivatives or adaptations of the work are permitted. 作品の派生作品や翻案は許可されません。</p>
+
+                        <h3>CC BY-NC-ND</h3>
+                        <p>This license enables reusers to copy and distribute the material in any medium or format
+                            in unadapted form only, for noncommercial purposes only, and only so long as attribution
+                            is given to the creator. CC BY-NC-ND includes the following elements: <br>
+                            このライセンスにより、再利用者は、改変されていない形式でのみ、
+                            あらゆるメディアまたは形式で素材をコピーおよび配布できます。
+                            ただし、非商用目的に限り、作成者に帰属が与えられている場合に限ります。
+                            CC BY-NC-ND には、次の要素が含まれます:<br>
+                            BY: credit must be given to the creator. <br>
+                            NC: Only noncommercial uses of the work are permitted. <br>
+                            ND: No derivatives or adaptations of the work are permitted.</p>
+
+                        <h3>The CC0 Public Domain Dedication</h3>
+                        <p>CC0 (aka CC Zero) is a public dedication tool, which enables creators to give up their
+                            copyright
+                            and put their works into the worldwide public domain. CC0 enables reusers
+                            to distribute, remix, adapt, and build upon the material in any medium or format, with no
+                            conditions.<br>
+                            CC0 (別名 CC Zero) はパブリック献呈ツールであり、
+                            クリエイターが著作権を放棄して作品を全世界のパブリック・ドメインにすることができます。
+                            CC0 を使用すると、再利用者は条件なしに、
+                            あらゆるメディアや形式で素材を配布、リミックス、適応、構築することができます。<br>
+                        </p>
+                        <p style="text-align: center">
+                            <a href="https://creativecommons.org/share-your-work/cclicenses/" class="link"
+                                target="_blank" rel="noopener noreferrer">
+                                https://creativecommons.org/share-your-work/cclicenses/</a>
+                        </p>
+
+                    </div>
+                </div>
+            </section>
+
+            <!----------------------------------------------------------------------------------------------------------->
+
+            <section>
+                <div>
+                    <h3>医薬品分子の柔軟性を応用した分子複合体の機能設計： 結晶成長における猫の着地と犬の着地</h3>
+                    <div class="img-container">
+                        <div class="overlay" id="overlay"></div>
+                        <img src="/images/about/Momoko2.png" alt="Spring and parachute of piroxicam">
+                        <div class="aboutpop" id="aboutpopA">ポップアップAの内容</div>
+                        <div class="aboutpop" id="aboutpopB">ポップアップBの内容</div>
+                        <div class="aboutpop" id="aboutpopC">ポップアップCの内容</div>
+                        <div class="aboutpop" id="aboutpopD">ポップアップDの内容</div>
+                        <div class="aboutpop" id="aboutpopE">ポップアップEの内容</div>
+                        <!-- クリック領域位置
+                                coords:左から12%、上から20%、左から80%(12+68)、上から50%(20+30)
+                                hotspotclass:左から12%、上から20%、width 68%、height 30% -->
+                        <map name="image-map">
+                            <area shape="rect" coords="7%,16%,22.5%,39%" alt="A" data-aboutpop="aboutpopA">
+                            <area shape="rect" coords="28%,16%,42%,39%" alt="B" data-aboutpop="aboutpopB">
+                            <area shape="rect" coords="2%,45%,44%,97%" alt="C" data-aboutpop="aboutpopC">
+                            <area shape="rect" coords="49.5%,54%,71%,90%" alt="D" data-aboutpop="aboutpopD">
+                            <area shape="rect" coords="78%,54.5%,96.5%,89.5%" alt="E" data-aboutpop="aboutpopE">
+                        </map>
+                        <div class="hotspot" data-aboutpop="aboutpopA"
+                            style="left: 7%; top: 16%; width: 15.5%; height: 23%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopB"
+                            style="left: 28%; top: 16%; width: 14%; height: 23%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopC"
+                            style="left: 2%; top: 45%; width: 42%; height: 52%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopD"
+                            style="left: 49.5%; top: 54%; width: 21.5%; height: 36%;"></div>
+                        <div class="hotspot" data-aboutpop="aboutpopE"
+                            style="left: 78%; top: 54.5%; width: 18.5%; height: 35%;"></div>
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <div class="supplement">
+                        Momoko Fujita; Tomohiro Tsuchida; Hikaru Kataoka; Chihiro Tsunoda; Kota Moritake; Satoru Goto;
+                        <br>
+                        <a href="https://doi.org/10.1016/j.ijpharm.2024.124886" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Spring and parachute approach for piroxicam dissolution;
+                            its phenomenological model on the thermodynamics of irreversible processes,
+                            International Journal of Pharmaceutics, 667 A:124886. <b>(2024)</b></a><br>
+
+                        Momoko Fujita; Satoru Goto; Hitoshi Chatani; Yuta Otsuka; Yohsuke Shimada; Hiroshi Terada;
+                        Katsuyuki
+                        Inoo; <br>
+                        <a href="https://doi.org/10.1039/C9RA09952B" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            The function of oxybuprocaine: a parachute effect that sustains the supersaturated state of
+                            anhydrous
+                            piroxicam crystals,
+                            RSC Advances, 10:1572-1579. <b>(2020)</b></a>
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <div class="img-container">
+                        <div class="overlay" id="overlay"></div>
+                        <img src="/images/about/Suenaga.png" alt="Ibuprofen and diclofenac with xanthine derivatives">
+                        <div class="aboutpop" id="aboutpopF">ポップアップFの内容</div>
+                        <div class="aboutpop" id="aboutpopG">ポップアップGの内容</div>
+                        <div class="aboutpop" id="aboutpopH">ポップアップHの内容</div>
+                        <div class="aboutpop" id="aboutpopI">ポップアップIの内容</div>
+                        <map name="image-map">
+                            <area shape="rect" coords="1%,43%,46%,98%" alt="F" data-aboutpop="aboutpopF">
+                            <area shape="rect" coords="47%,8%,79%,60%" alt="G" data-aboutpop="aboutpopG">
+                            <area shape="rect" coords="80%,5%,99%,65.5%" alt="H" data-aboutpop="aboutpopH">
+                            <area shape="rect" coords="47%,66%,99%,84%" alt="I" data-aboutpop="aboutpopI">
+                        </map>
+                        <div class="hotspot" data-aboutpop="aboutpopF"
+                            style="left: 1%; top: 43%; width: 45%; height: 55%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopG"
+                            style="left: 47%; top: 8%; width: 32%; height: 52%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopH"
+                            style="left: 80%; top: 5%; width: 19%; height: 60.5%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopI"
+                            style="left: 47%; top: 66%; width: 52%; height: 18%;">
+                        </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <div class="supplement">
+                        Shoya Suenaga; Hikaru Kataoka; Kanji Hasegawa; Ryotaro Koga; Chihiro Tsunoda; Wataru Kuwashima;
+                        Tomohiro Tsuchida; Satoru Goto;<br>
+                        <a href="https://doi.org/10.1021/acs.molpharmaceut.4c00429" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            How does the powder mixture of ibuprofen and caffeine attenuate the solubility of ibuprofen?
+                            Comparative
+                            study for the xanthine derivatives to recognize their intermolecular interactions using
+                            Fourier-transform infrared (FTIR) spectra, differential scanning calorimetry (DSC), and
+                            X-ray
+                            powder
+                            diffractometry (XRPD),
+                            Molecular Pharmaceutics, 21(9):4524-4540. <b>(2024)</b></a><br>
+
+                        Ryotaro Koga; Tomohiro Tsuchida; Chihiro Tsunoda; Hikaru Kataoka; Shoya Suenaga; Satoru Goto;
+                        <br>
+                        <a href="https://doi.org/10.1016/j.matchemphys.2024.130158" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Physicochemical properties of diclofenac regulated by its intermolecular interactions
+                            with caffeine evaluated via vector space model, nuclear magnetic resonance,
+                            and Fourier-transform infrared analyses,
+                            Materials Chemisrty and Physics, 333:130158 <b>(2025)</b></a>
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <h3>
+                        イオン雰囲気を積極的に応用した医薬品分子の溶解性向上： 溶解化学ポテンシャル
+                    </h3>
+                    <div class="img-container">
+                        <div class="overlay" id="overlay"></div>
+                        <img src="/images/about/Kinoshita.png" alt="Enthalpy-Entropy compensation">
+                        <div class="aboutpop" id="aboutpopJ">
+                            <img src="/images/NSAIDs/NSAIDs-DTZ2.jpg" alt="Dissolution profiles and Solubilities">
+                            <p>ほかの NSAIDs (NAP, DIC, IND) の溶解曲線と溶解度のグラフ</p>
+                        </div>
+                        <div class="aboutpop" id="aboutpopK">ポップアップKの内容</div>
+                        <div class="aboutpop" id="aboutpopL">ポップアップLの内容</div>
+                        <div class="aboutpop" id="aboutpopN">
+                            <img src="/images/NSAIDs/DTZ.jpg" alt="Enthalpy-entropy compensation for DLZ mixture">
+                            <img src="/images/NSAIDs/LID.jpg" alt="3Enthalpy-entropy compensation for LID mixture">
+                        </div>
+                        <map name="image-map">
+                            <area shape="rect" coords="3%,25%,43%,72%" alt="J" data-aboutpop="aboutpopJ">
+                            <area shape="rect" coords="3%,77%,42%,97%" alt="K" data-aboutpop="aboutpopK">
+                            <area shape="rect" coords="45%,5%,99%,53%" alt="L" data-aboutpop="aboutpopL">
+                            <area shape="rect" coords="45%,54%,99%,97%" alt="L" data-aboutpop="aboutpopL">
+                        </map>
+                        <div class="hotspot" data-aboutpop="aboutpopJ"
+                            style="left: 3%; top: 25%; width: 40%; height: 47%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopK"
+                            style="left: 3%; top: 77%; width: 39%; height: 20%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopL"
+                            style="left: 45%; top: 5%; width: 54%; height: 48%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopN"
+                            style="left: 45%; top: 54%; width: 54%; height: 43%;">
+                        </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <div class="supplement">
+                        Takatoshi Kinoshita; Chihiro Tsunoda; Satoru Goto; Kanji Hasegawa; Hitoshi Chatani; Momoko
+                        Fujita;
+                        Hikaru Kataoka; Yuta Katahara; Yohsuke Shimada; Yuta Otsuka; Kazushi Komatsu; Hiroshi Terada;
+                        <br>
+                        <a href="https://doi.org/10.1248/cpb.c21-00834" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Enthalpy-entropy compensation in the structure-dependent effect of nonsteroidal
+                            anti-inflammatory drugs
+                            on the aqueous solubility of diltiazem,
+                            Chemical & Pharmaceutical Bulletin, 70(2):120-129. <b>(2022)</b></a><br>
+
+                        Hitoshi Chatani; Satoru Goto; Hikaru Kataoka; Momoko Fujita; Yuta Otsuka; Yohsuke Shimada;
+                        Hiroshi
+                        Terada;<br>
+                        <a href="https://doi.org/10.1016/j.chemphys.2019.110415" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Effects of phosphate on drug solubility behavior of mixture ibuprofen and lidocaine,
+                            Chemical Physics, 525:110415-110415-7. <b>(2019)</b></a><br>
+
+                        Hikaru Kataoka; Yoshinori Sakaki; Kazushi Komatsu; Yohsuke Shimada; Satoru Goto; <br>
+                        <a href="https://doi.org/10.1016/j.xphs.2017.04.010" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Melting process of the peritectic mixture of lidocaine and ibuprofen interpreted by
+                            site percolation theory model,
+                            JOURNAL OF PHARMACEUTICAL SCIENCES, 106(10):3016-3021. <b>(2017)</b></a>
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <div class="img-container">
+                        <div class="overlay" id="overlay"></div>
+                        <img src="/images/about/MoritaK.png" alt="Monomer/dimer/polymer equilibrium of NSAIDs">
+                        <div class="aboutpop" id="aboutpopM">
+                            <img src="/images/about/moritake-GIF/20240901Moritake-GIF1.gif" alt="1">
+                            <img src="/images/about/moritake-GIF/20240901Moritake-GIF2.gif" alt="2">
+                            <img src="/images/about/moritake-GIF/20240901Moritake-GIF3.gif" alt="3">
+                            <img src="/images/about/moritake-GIF/20240901Moritake-GIF4.gif" alt="4">
+                        </div>
+                        <div class="aboutpop" id="aboutpopO">ポップアップOの内容</div>
+                        <div class="aboutpop" id="aboutpopP">ポップアップPの内容</div>
+                        <div class="aboutpop" id="aboutpopQ">ポップアップQの内容</div>
+                        <map name="image-map">
+                            <area shape="rect" coords="3%,6%,22%,80%" alt="M" data-aboutpop="aboutpopM">
+                            <area shape="rect" coords="25%,15%,42%,80%" alt="O" data-aboutpop="aboutpopO">
+                            <area shape="rect" coords="45%,22%,99%,47%" alt="P" data-aboutpop="aboutpopP">
+                            <area shape="rect" coords="45%,52%,99%,82%" alt="Q" data-aboutpop="aboutpopQ">
+                        </map>
+                        <div class="hotspot" data-aboutpop="aboutpopM"
+                            style="left: 3%; top: 6%; width: 19%; height: 74%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopO"
+                            style="left: 25%; top: 15%; width: 17%; height: 65%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopP"
+                            style="left: 45%; top: 22%; width: 54%; height: 25%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopQ"
+                            style="left: 45%; top: 52%; width: 54%; height: 30%;">
+                        </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <div class="supplement">
+                        Kota Moritake; Tomohiro Tsuchida; Ryotaro Koga; Kanji Hasegawa; Wataru Kuwashima;
+                        Hikaru Kataoka; Satoru Goto; Hiroshi Terada; <br>
+                        <a href="https://doi.org/10.1016/j.ijpharm.2025.125167" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Equilibrium of monomers, dimers, and polymeric aggregates in the &alpha;-aryl-propionic
+                            acid-type analgesics
+                            naproxen, ketoprofen, and ibuprofen: Comparative study with oxicam-type meloxicam and
+                            piroxicam,
+                            International Journal of Pharmaceutics, 670:125167 <b>(2025)</b></a><br>
+
+                        Ryo Tateuchi; Naoki Sagawa; Yohsuke Shimada; Satoru Goto; <br>
+                        <a href="https://doi.org/10.1021/acs.jpcb.5b03984" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Enhancement of the 1-Octanol/Water Partition Coefficient of the Anti-Inflammatory
+                            Indomethacin in the Presence of Lidocaine and Other Local Anesthetics,
+                            Journal of Physical Chemistry B, 119:9868-9873 <b>(2015)</b></a>
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <h3>
+                        ポリロタキサンハイドロゲルを応用した外用医薬品放出性の実現： シクロデキストリン包接
+                    </h3>
+                    <div>&#185;&#8730;(^v^)/
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <div class="supplement">
+                        Chihiro Kuroda; Tomohiro Tsuchida; Chihiro Tsunoda; Megumi Minamide; Ryosuke Hiroshige; Satoru
+                        Goto;
+                        <br>
+                        <a href="https://doi.org/10.1021/acs.langmuir.4c04108" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Stability and properties of UV filter avobenzone under its diketo/enol tautomerization
+                            induced by molecular encapsulation with &beta;-cyclodextrin,
+                            Langmuir, 41:1429-1445 <b>(2025)</b></a><br>
+
+                        Yukiko Oshite; Ayako Wada-Hirai; Risa Ichii; Chihiro Kuroda; Kanji Hasegawa; Ryosuke Hiroshige;
+                        Hideshi Yokoyama; Tomohiro Tsuchida; Satoru Goto; <br>
+                        <a href="https://doi.org/10.1039/D3PM00039G" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Comparative study on the effects of the inclusion complexes of non-steroidal
+                            anti-inflammatory
+                            drugs
+                            with 2-hydroxypropyl-&beta;-cyclodextrins on dissociation rates and supersaturation,
+                            RSC Pharmaceutics, 1:80-97. <b>(2024)</b></a><br>
+
+                        Chihiro Tsunoda; Kanji Hasegawa; Ryosuke Hiroshige; Takahiro Kasai; Hideshi Yokoyama; Satoru
+                        Goto;
+                        <br>
+                        <a href="https://doi.org/10.1021/acs.molpharmaceut.3c00291" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Effect of cyclodextrin complex formation on solubility changes of each drug due to
+                            intermolecular
+                            interactions between acidic NSAIDs and basic H2 blockers,
+                            Molocular Pharmaceutics, 20:5032-5042. <b>(2023)</b></a><br>
+
+                        Chihiro Tsunoda; Satoru Goto; Ryosuke Hiroshige; Takahiro Kasai; Yuta Okumura; Hideshi Yokoyama;
+                        <br>
+                        <a href="https://doi.org/10.1016/j.ijpharm.2023.122913" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Optimization of the stability constants of the ternary system of
+                            diclofenac/famotidine/&beta;-cyclodextrin
+                            by nonlinear least-squares method using theoretical equations,
+                            Internation Journal of Pharmaceutics, 638:122913. <b>(2023)</b> </a><br>
+
+                        Ryosuke Hiroshige; Satoru Goto; Chihiro Tsunoda; Risa Ichii; Shota Shimizu;
+                        Yuta Otsuka; Kosho Makino; Hideyo Takahashi; Hideshi Yokoyama; <br>
+                        <a href="https://doi.org/10.1007/s10847-022-01160-3" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Trajectory of the spectral/structural rearrangements for photo-oxidative reaction of neat
+                            ketoprofen and
+                            its cyclodextrin complex,
+                            Journal of Inclusion Phenomena and Macrocyclic Chemistry, 102:791-800. <b>(2022)</b>
+                        </a><br>
+
+                        Ryosuke Hiroshige; Satoru Goto; Risa Ichii; Shota Shimizu; Ayako Wada-Hirai; Ying-Peng Li;
+                        Yohsuke Shimada; Yuta Otsuka; Kosho Makino; Hideyo Takahashi; <br>
+                        <a href="https://doi.org/10.1007/s10847-021-01122-1" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Protective effects of cyclodextrins on edaravone degradation induced by
+                            atmospheric oxygen or additive oxidant,
+                            Journal of Inclusion Phenomena and Macrocyclic Chemistry, 102:327-338. <b>(2022)</b>
+                        </a><br>
+
+                        Ayako Wada-Hirai; Shota Shimizua; Risa Ichii; Chihiro Tsunoda; Ryosuke Hiroshige; Momoko Fujita;
+                        Ying-Peng Li; Yohsuke Shimada; Yuta Otsuka; Satoru Goto; <br>
+                        <a href="https://doi.org/10.1016/j.xphs.2021.07.002" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Stabilization of the metastable &alpha;-form of indomethacin induced by the addition of
+                            2-hydroxypropyl-&beta;-cyclodextrin, causing supersaturation
+                            (<span style="font-style: italic;">spring</span>) and its sustaining deployment
+                            (<span style="font-style: italic;">parachute</span>),
+                            Journal of Pharmaceutical Sciences, 110(11):3623-3630. <b>(2021)</b> </a><br>
+
+                        Shota Shimizu; Ayako Wada-Hirai; Yingpeng Li; Yohsuke Shimada; Yuta Otsuka; Satoru Goto; <br>
+                        <a href="https://doi.org/10.1016/j.xphs.2020.03.029" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Relationship between phase solubility diagrams and crystalline structures during dissolution
+                            of
+                            cimetidine/cyclodextrin complex crystals,
+                            Journal of Pharmaceutical Sciences, 109(7):2206-2212. <b>(2020)</b></a><br>
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <h3>
+                        異常タンパク質アミロイドの形成過程における分子科学的環境解析： 脂質膜と金属イオン
+                    </h3>
+                    <div>
+                        &#185;&#8730;(^o^)/
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <div class="supplement">
+                        Tomoki Shiratori; Satoru Goto; Tomoyo Sakaguchi; Takahiro Kasai; Yuta Otsuka; Kyohei Higashi;
+                        Kosho Makino; Hideyo Takahashi; Kazushi Komatsu;<br>
+                        <a href="https://doi.org/10.1016/j.bbrep.2021.101153" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Singular value decomposition analysis of the secondary structure features contributing to
+                            the
+                            circular
+                            dichroism spectra of model proteins,
+                            Biochemistry and Biophysics Reprot, 28:101153-101153. <b>(2021)</b> </a><br>
+
+                        Takahiro Kasai; Takashi Wada; Tsubasa Iijima; Yoshiko Minami; Tomoyo Sakaguchi; Tomoki
+                        Shiratori;
+                        Yohosuke Shimada; Yukiko Okayama; Satoru Goto; <br>
+                        <a href="https://doi.org/10.1016/j.bbadva.2021.100036" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Comparative study of the hydrophobic interaction effect of pH and ionic strength
+                            on aggregation/emulsification of Congo red and amyloid fibrillation of insulin,
+                            BBA Advances, 2:100036. <b>(2022)</b></a><br>
+
+                        Tomoyo Sakaguchi; Takashi Wada; Takahiro Kasai; Tomoki Shiratori; Yoshiko Minami;
+                        Yohsuke Shimada; Yuta Otsuka; Kazushi Komatsu; Satoru Goto; <br>
+                        <a href="https://doi.org/10.1016/j.colsurfb.2020.110845" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Effects of ionic and reductive atmosphere on the conformational rearrangement in hen egg
+                            white
+                            lysozyme
+                            prior to amyloid formation,
+                            Colloids and Surfaces - Biointerfaces, 190(110845):1-8. <b>(2020)</b> </a>
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <h3>
+                        生体膜と抗酸化剤、タンパク質と抗酸化剤 (新)
+                    </h3>
+                    <div>
+                        &#179;&#8730;(^_^)/
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <div class="supplement">
+                        Yusuke Horizumi; Reo Tanada; Yuya Kurosawa; Miwa Takatsuka; Tomohiro Tsuchida; Satoru Goto;<br>
+                        <a href="https://doi.org/10.1021/acschemneuro.4c00702" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Reactivity of olanzapine and tricyclic antidepressants on the protective effects of Trolox
+                            on lipid peroxidation evaluated using fluorescence anisotropy,
+                            electron paramagnetic resonance spectrometry, and thermal analysis,
+                            ACS Chemical Neuroscience, <b>(2025)</b></a><br>
+
+                        Yusuke Horizumi; Satoru Goto; Miwa Takatsuka; Hideshi Yokoyama; <br>
+                        <a href="https://doi.org/10.1021/acs.molpharmaceut.2c01053" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Effects of local anesthetics on liposomal membranes determined by their inhibitory activity
+                            of
+                            lipid
+                            peroxidation,
+                            Physical Chemisrty Chemical Physics, 20(6):2911-2918. <b>(2023)</b></a><br>
+
+                        Miwa Takatsuka; Satoru Goto; Kota Moritake; Yohsuke Shimada; Tomohiro Tsuchida;<br>
+                        <a href="https://doi.org/10.1016/j.jphotochem.2024.116142" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Antioxidant capacity of edaravone, quercetin, and myricetin involving probabilistic
+                            fluctuations using eosin-Y and eosin-B as fluorescent probes in the ORAC assay,
+                            Journal of Photochemistry and Photobiology, A: Chemistry, 460:116142 <b>(2025)</b></a><br>
+
+                        Miwa Takatsuka; Satoru Goto; Kenshiro Kobayashi; Yuta Otsuka; Yohsuke Shimada;<br>
+                        <a href="https://doi.org/10.1016/j.fbio.2022.101714" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Evaluation of pure antioxidative capacity of antioxidants: ESR spectroscopy of stable
+                            radicals
+                            by DPPH
+                            and ABTS assays with singular value decomposition,
+                            FOOD BIOSCIENCE, 48:101714. <b>(2022)</b> </a><br>
+
+                        Miwa Takatsuka, Satoru Goto, Kenshiro Kobayashi, Yuta Otsuka, Yohsuke Shimada <br>
+                        <a href="https://doi.org/10.1016/j.bbadva.2021.100030" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Leading individual features of antioxidant systematically classified by the ORAC assay and
+                            its
+                            single
+                            electron transfer and hydrogen atom transfer reactivities; Analyzing ALS therapeutic drug
+                            Edaravone <br>
+                            BBA Advances, 1:100030. <b>(2021)</b>, Full Open Access </a><br>
+
+                        Ayaka Takara, Kenshiro Kobayashi, Shimpei Watanabe, Keisuke Okuyama, Yohsuke Shimada, Satoru
+                        Goto
+                        <br>
+                        <a href="https://doi.org/10.1016/j.jphotochem.2016.10.026" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Dibucaine inhibits ketoprofen photodegradation via a mechanism different from that of
+                            antioxidants,
+                            Journal of Photochemistry and Photobiology, A: Chemistry, 333:208-212. <b>(2017)</b></a>
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <h3>
+                        形態素解析を利用した医薬品添付文書の相関モジュライ空間の解析： 漢方薬、抗体薬
+                    </h3>
+                    <div class="img-container">
+                        <div class="overlay" id="overlay"></div>
+                        <img src="/images/about/Rieito2.png" alt="Monomer/dimer/polymer equilibrium of NSAIDs">
+                        <div class="aboutpop" id="aboutpopR">ポップアップRの内容</div>
+                        <div class="aboutpop" id="aboutpopS">ポップアップSの内容</div>
+                        <div class="aboutpop" id="aboutpopT">ポップアップTの内容</div>
+                        <div class="aboutpop" id="aboutpopU">ポップアップUの内容</div>
+                        <div class="aboutpop" id="aboutpopV">ポップアップVの内容</div>
+                        <map name="image-map">
+                            <area shape="rect" coords="1%,7%,22%,66%" alt="R" data-aboutpop="aboutpopR">
+                            <area shape="rect" coords="1%,67%,22%,99%" alt="S" data-aboutpop="aboutpopS">
+                            <area shape="rect" coords="24%,12%,62%,99%" alt="T" data-aboutpop="aboutpopT">
+                            <area shape="rect" coords="67%,12%,98%,50%" alt="U" data-aboutpop="aboutpopU">
+                            <area shape="rect" coords="66%,52%,99%,99%" alt="V" data-aboutpop="aboutpopV">
+                        </map>
+                        <div class="hotspot" data-aboutpop="aboutpopR"
+                            style="left: 1%; top: 7%; width: 21%; height: 59%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopS"
+                            style="left: 1%; top: 67%; width: 21%; height: 32%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopT"
+                            style="left: 24%; top: 12%; width: 40%; height: 87%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopU"
+                            style="left: 67%; top: 12%; width: 31%; height: 38%;">
+                        </div>
+                        <div class="hotspot" data-aboutpop="aboutpopV"
+                            style="left: 66%; top: 52%; width: 33%; height: 47%;">
+                        </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------------------------------->
+
+                    <div class="supplement">
+                        Yuta Okumura; Satoru Goto; Masahiro Ishiguro; Megumi Minamide; Kanji Hasegawa; Yasunari Mano;
+                        Tomohiro Tsuchida; <br>
+                        <a href="https://doi.org/10.11256/jjdi.26.57" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Classification of therapeutic antibodies based on the analysis of their side effects,
+                            Japanese Journal of Drug Information, 26(2):57-64. <b>(2024)</b> </a><br>
+
+                        菊池美沙 Misa Kikuchi; 伊東理絵 Rie Ito; 田中優太 Yuta Tanaka; 島田洋輔 Yohsuke Shimada</a>;
+                        後藤 了 Satoru Goto; 尾関理恵 Rie Ozeki; 小茂田昌代 Masayo Komoda; <br>
+                        <a href="https://doi.org/10.11256/jjdi.20.111" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            潜在意味の解析を用いた添付文書に基づく類似医薬品提案法の探索
+                            Similar drug proposals based on package inserts using latent semantic analysis,
+                            医薬品情報学 Japanese Journal of Drug Information, 20(2):195-203. <b>(2018)</b></a>
+                    </div>
+                </div>
+
+            </section>
+            <!----------------------------------------------------------------------------------------------------------->
+
+            <section>
+                <h2>研究室で話題に出てきた参考文献 literature</h2>
+                <ul class="literature">
+                    <li>
+                        <a href="./editor/nbt928.pdf" class="link" target="_blank" rel="noopener noreferrer">
+                            Discovery of transdermal penetration enhancers by high-throughput screening</a>
+                        三ツ谷話題提供
+                    </li>
+                    <li>
+                        <a href="https://www.nikkei.com/article/DGXZQOCC217Z20R20C24A8000000/" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            静岡市、山梨の企業とPFAS汚染除去へ 亜臨界水を活用日経新聞 2024.8.21)</a>
+                        三ツ谷話題提供<br>
+                        【関連文献】
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0048969721062859" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            "Study of MOF incorporated dual layer membrane with enhanced removal of ammonia and
+                            per-/poly-fluoroalkyl substances (PFAS) in landfill leachate treatment"</a><br>
+                        【関連文献】
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0045653519301031" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            "Sorption of PFOA onto different laboratory materials: Filter membranes and centrifuge
+                            tubes"</a>
+                    </li>
+                    <li>
+                        ファモチジンの分子設計：
+                        <a href="https://arystalifescience.jp/guide/t_102a.php" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            日本で作られた新しい殺虫剤の話－NACRAについて－ 下松 明雄 農薬ガイド 2002.7.31</a>
+                        長谷川 (2024/11/17)
+                    </li>
+                    <li>
+                        シメチジン、ニザチジン、ラニチジンの蛍光 550 nm
+                        <a href="https://pubs.rsc.org/en/content/articlelanding/2011/an/c1an15078b" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            "Determination of ranitidine, nizatidine, and cimetidine by a sensitive fluorescent
+                            probe"</a><br>
+                        インドメタシンの蛍光 360 nm
+                        <a href="https://pubs.rsc.org/en/content/articlelanding/2017/md/c7md00094d" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            "Interaction of indomethacin with calf thymus DNA: a multi-spectroscopic,
+                            thermodynamic and molecular modelling approach"</a>
+                        長谷川 (2024/11/17)
+                    </li>
+                    <li>
+                        コアモルファス
+                        <a href="https://pubs.acs.org/doi/10.1021/acs.molpharmaceut.9b00301" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            "Effect of Drug–Polymer Interactions through Hypromellose Acetate Succinate Substituents on
+                            the Physical Stability
+                            on Solid Dispersions Studied by Fourier-Transform Infrared and Solid-State Nuclear Magnetic
+                            Resonance"</a>
+                        長谷川 (2024/11/18)<br>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0378517312005005?via%3Dihub"
+                            class="link" target="_blank" rel="noopener noreferrer">
+                            "A theoretical and spectroscopic study of co-amorphous naproxen and indomethacin"</a>
+                        長谷川 (2024/11/28)
+                    </li>
+                    <li>
+                        LLPSのレビュー
+                        <a href="https://pubs.acs.org/doi/full/10.1021/acs.molpharmaceut.5b00937" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            "Pharmaceutical Perspective on Opalescence and Liquid–Liquid Phase Separation in Protein
+                            Solutions"</a><br>
+                        拡散層のparticle drifting effect
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0378517309008710" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            "Possible reduction of effective thickness of intestinal unstirred water layer by particle
+                            drifting effect"</a>
+                        長谷川 (2024/11/18)
+                    </li>
+                    <li>
+                        伊東の用いた方法論：
+                        <a href="https://mieruca-ai.com/ai/lsa-lsi-svd/" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            【技術解説】潜在意味解析(LSA) ～特異値分解(SVD)から文書検索まで～</a>
+                    </li>
+                    <li>
+                        製剤系の話題：
+                        <a href="https://www.jstage.jst.go.jp/article/shikizai/89/3/89_98/_pdf" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            "分子集合体" リオトロピック液晶 荒牧賢治 J.Jpn.Soc.Colour Mater. 89(3):98–101, 2016</a>
+                    </li>
+                    <li>
+                        ORAC法など：
+                        <a href="https://www.jstage.jst.go.jp/article/jos1996/47/10/47_10_1073/_pdf" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            "抗酸化成分の機能評価法" 宮澤陽夫, 仲川清隆 日本油化学会誌 47(10):1073-1148. 1998</a>
+                    </li>
+                    <li>
+                        SOAC法：
+                        <a href="https://www.jstage.jst.go.jp/article/oleoscience/13/8/13_371/_pdf/-char/ja"
+                            class="link" target="_blank" rel="noopener noreferrer">
+                            "食品の抗酸化能 一重項酸素消去活性評価法(SOAC法)の開発" 向井和男, 大内綾 オレオサイエンス 13(8):371-378. 2013</a><br>
+                    </li>
+                </ul>
+            </section>
+            <!----------------------------------------------------------------------------------------------------------->
+
+            <section>
+                <h4>スタッフ staffs</h4>
+
+                <div class="staff">
+                    <img src="/images/goteauxsatoru.jpg" alt="Goteaux Satoru">
+                    <p>Satoru Goto received his Ph.D. in 1993.
+                        Following this, he was appointed as a Research Associate at
+                        <a href="https://www.tokushima-u.ac.jp/ph/english/" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Faculty of Pharmaceutical Sciences, Tokushima University</a>,
+                        where he served from 1993 to 2006. He then became an Associate Professor at
+                        <a href="https://otawara.iuhw.ac.jp/gakubu/yakugaku/index.html" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            International University of Health and Welfare</a> from 2006 to 2012.
+                        Since 2012, he has been with
+                        <a href="https://www.tus.ac.jp/en/fac/yaku/" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            Tokyo University of Science</a>, focusing on improving the applications of
+                        <a href="https://en.wikipedia.org/wiki/Linear_combination" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            linear combination</a> algebra and
+                        <a href="https://en.wikipedia.org/wiki/topology" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            topology</a> in
+                        <a href="https://en.wikipedia.org/wiki/Quantitative_structure%E2%80%93activity_relationship"
+                            class="link" target="_blank" rel="noopener noreferrer">
+                            QSAR studies</a>,
+                        <a href="https://en.wikipedia.org/wiki/Physical_chemistry" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            physical chemistry</a>, and
+                        <a href="https://en.wikipedia.org/wiki/Pharmacy#Pharmaceutical_sciences" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            pharmaceutical sciences</a>.
+                    </p>
+                    <p>Recently, his group proposed that solutions of
+                        <a href="https://en.wikipedia.org/wiki/Active_ingredient" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            pharmaceutical ingredients</a>
+                        might behave as
+                        <a href="https://en.wikipedia.org/wiki/Chemical_equilibrium" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            equilibrated</a>
+                        <a href="https://en.wikipedia.org/wiki/Molecule" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            molecules</a> and associated
+                        <a href="https://en.wikipedia.org/wiki/Colloid" class="link" target="_blank"
+                            rel="noopener noreferrer">
+                            colloids</a>. They use
+                        <a href="https://en.wikipedia.org/wiki/Singular_value_decomposition" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            the singular value decomposition (SVD)</a>
+                        to analyze observed spectra-matrices, dividing them into basis vectors of spectra
+                        (a set of finite spectral elements shared by the individual observed spectra),
+                        singular values (corresponding to the intensity/standard deviation of each basis vector’s
+                        contribution), and singular vectors (a set of coefficient vectors for the linear combination
+                        of the basis vectors rearranged in the observed spectra).
+                        These singular vectors can reveal the
+                        <a href="https://projecteuclid.org/journals/hiroshima-mathematical-journal/volume-42/issue-1/The-configuration-space-of-a-model-for-ringed-hydrocarbon-molecules/10.32917/hmj/1333113009.full"
+                            class="link" target="_blank" rel="noopener noreferrer">
+                            configuration space</a>, reflecting the constitution of the observed spectra
+                        <a href="https://link.springer.com/article/10.1007/s10847-022-01160-3" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            (UV-vis</a>,
+                        <a href="https://jpharmsci.org/article/S0022-3549(20)30580-3/abstract" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            FTIR</a>,
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0927776522000273" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            fluoresence</a>,
+                        <a href="https://www.sciencedirect.com/science/article/pii/S2405580821002478" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            CD</a>,
+                        <a href="https://pubs.rsc.org/en/content/articlelanding/2023/cp/d3cp02737f" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            XRPD</a>,
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S2212429222001730" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            ESR</a>,
+                        and DSC) along experimentally conditional variables and visualizing their
+                        <a href="https://academic.oup.com/bcsj/article-abstract/86/2/230/7344010" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            interconversion pathways</a>
+                        depending on gradual changes in the
+                        <a href="https://en.wikipedia.org/wiki/Latent_and_observable_variables" class="link"
+                            target="_blank" rel="noopener noreferrer">
+                            observed or latent variables</a>.
+                        In other words, the SVD treatment of the obtained instrumental data not only aids
+                        in trend analysis and noise reduction but also has the potential to uncover scientific laws
+                        in spontaneous phenomena.<br>
+                        <a href="https://scholar.google.co.jp/citations?user=MBsONkUAAAAJ" class="link" target="_blank"
+                            rel="noopener noreferrer">Google Scholar</a>
+                    </p>
+                </div>
+
+            </section>
+        </article>
+        <!----------------------------------------------------------------------------------------------------------->
+    </main>
+    <button ID="page_top_btn">ページ上部へ</button>
+
+    <div id="footer"></div>
+    <script src="/js/script.js"></script>
+    <script src="/js/popup.js"></script>
+    <script src="/js/hotspot.js"></script>
+</body>
+
+</html>

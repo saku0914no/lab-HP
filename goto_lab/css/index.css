@@ -1,0 +1,20 @@
+/* mainvisual */
+.swiper-slide img {
+    width: 100%;
+    aspect-ratio: 16/6;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.scroll {
+    height: calc(500px - 20vw);
+    padding: 20px 5vw;
+    border: solid 1px black;
+    overflow-y: scroll;
+}
+
+article li {
+    padding: 20px 0;
+    border-bottom: #9bb5ff 1px solid;
+}
