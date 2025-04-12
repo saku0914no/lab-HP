@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 let li = document.createElement("li");
 
                 // title
-                let title = document.createElement("h4");
+                let title = document.createElement("h5");
                 if (markData.titleLink) {
                     title.innerHTML = `<a href="${markData.titleLink}" \
                 class="link" target="_blank" rel="noopener noreferrer">${markData.title}</a>`;
