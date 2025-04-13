@@ -1,4 +1,5 @@
 # LAB HomePages
+- [TUS: goto lab](https://www.rs.tus.ac.jp/goto_lab/index.html)
 このプロジェクトで使用する画像や動画が格納された`images`フォルダは、サイズが大きいためGitHubリポジトリには含まれていません。
 
 ## 使用したリソース
