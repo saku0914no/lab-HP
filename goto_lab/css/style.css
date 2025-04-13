@@ -3,61 +3,6 @@ html {
     font-style: normal;
     overflow-x: hidden;
 }
-
-/* title(header) */
-h1 {
-    text-align: center;
-    font-size: 13px;
-    display: inline-block;
-    /* vertical-align: middle; */
-}
-
-h2 {
-    /* text-align: center; */
-    font-size: clamp(30px, 5vw, 45px);
-    padding-left: clamp(12px, 2%, 30px);
-    border-bottom: 1px solid #142164;
-    border-left: 15px solid #142164;
-    margin: 40px 10px 30px;
-}
-
-@media (max-width: 700px) {
-    h2 {
-        margin: 30px 5%;
-    }
-}
-
-h3 {
-    /* text-align: center; */
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-h4 {
-    display: inline-block;
-    font-size: 2rem;
-    text-align: center;
-    margin: 0 10px 30px;
-    border-bottom: solid 1px #47465f;
-}
-h5 {
-    font-size: 1.4rem;
-    margin: 0 0 10px;
-}
-
-/* link */
-.link {
-    color: #342dff;
-    text-decoration-line: underline;
-}
-
-.link:visited {
-    color: #3f3f3f;
-}
-
-.link:hover {
-    color: #e7b500;
-}
-
 main {
     display: flex;
 }
@@ -77,6 +22,70 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 10px;
+}
+
+/* title(header) */
+h1 {
+    text-align: center;
+    font-size: 13px;
+    display: inline-block;
+    /* vertical-align: middle; */
+}
+
+h2 {
+    /* text-align: center; */
+    font-size: clamp(30px, 5vw, 36px);
+    padding-left: clamp(12px, 2%, 30px);
+    border-bottom: 1px solid #142164;
+    border-left: 15px solid #142164;
+    margin: 40px 10px 30px;
+}
+
+@media (max-width: 700px) {
+    h2 {
+        margin: 30px 5%;
+    }
+}
+
+h3 {
+    /* text-align: center; */
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+h4 {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 10px 30px;
+    border-bottom: solid 1px #47465f;
+}
+h5 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+/* link */
+.link {
+    color: #342dff;
+    text-decoration-line: underline;
+}
+
+.link:visited {
+    color: #3f3f3f;
+}
+
+.link:hover {
+    color: #e7b500;
+}
+
+/* supplement */
+.supplement {
+    font-size: 0.8rem;
+    color: #7d7d7d;
+    margin: 3px 30px 30px;
+}
+.supplement ul {
+    list-style-type: square;
 }
 
 /* page jump */

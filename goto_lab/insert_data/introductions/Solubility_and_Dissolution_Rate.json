@@ -27,8 +27,8 @@
             <!-- popupの内容 -->
             <div class="popup-content">
                 <button class="popup-close close" >&times;</button>
-                <audio controls src="/images/introductions/Solubility_and_Dissolution_Rate/221113/221113_BABE_ver2.mp3"></audio>
-                <img src="/images/introductions/Solubility_and_Dissolution_Rate/221113/221113_BABE_poster_tsunoda.png" alt="221113_BABE_poster_tsunoda">
+                <audio controls src="images/introductions/Solubility_and_Dissolution_Rate/221113/221113_BABE_ver2.mp3"></audio>
+                <img src="images/introductions/Solubility_and_Dissolution_Rate/221113/221113_BABE_poster_tsunoda.png" alt="221113_BABE_poster_tsunoda">
             </div>
         </div>
 
@@ -52,7 +52,7 @@
             <!-- popupの内容 -->
             <div class="popup-content">
                 <button class="popup-close close" >&times;</button>
-                <video src="/images/introductions/Solubility_and_Dissolution_Rate/220621/220621_Ipops2022_Tsunoda.mp4" controls></video>
+                <video src="images/introductions/Solubility_and_Dissolution_Rate/220621/220621_Ipops2022_Tsunoda.mp4" controls></video>
             </div>
         </div>
 
@@ -77,8 +77,8 @@
             <!-- popupの内容 -->
             <div class="popup-content">
                     <button class="popup-close close" >&times;</button>
-                    <audio controls src="/images/introductions/Solubility_and_Dissolution_Rate/221115/221115_koga_BABEsymposium.mp3"></audio>
-                    <img src="/images/introductions/Solubility_and_Dissolution_Rate/221115/221115_koga_BABEsymposium.jpg" alt="221115_koga_BABEsymposium">
+                    <audio controls src="images/introductions/Solubility_and_Dissolution_Rate/221115/221115_koga_BABEsymposium.mp3"></audio>
+                    <img src="images/introductions/Solubility_and_Dissolution_Rate/221115/221115_koga_BABEsymposium.jpg" alt="221115_koga_BABEsymposium">
             </div>
         </div>
 
@@ -100,8 +100,8 @@
             <!-- popupの内容 -->
             <div class="popup-content">
                 <button class="popup-close close" >&times;</button>
-                <audio controls src="/images/introductions/Solubility_and_Dissolution_Rate/231108/Hasegawa_AFPS2023.mp3"></audio>
-                <img src="/images/introductions/Solubility_and_Dissolution_Rate/231108/Kanji_Hasegawa_SS3P3125.jpg" alt="Kanji_Hasegawa_SS3P3125">
+                <audio controls src="images/introductions/Solubility_and_Dissolution_Rate/231108/Hasegawa_AFPS2023.mp3"></audio>
+                <img src="images/introductions/Solubility_and_Dissolution_Rate/231108/Kanji_Hasegawa_SS3P3125.jpg" alt="Kanji_Hasegawa_SS3P3125">
             </div>
         </div>
 
@@ -123,8 +123,8 @@
             <!-- popupの内容 -->
             <div class="popup-content">
                 <button class="popup-close close" >&times;</button>
-                <audio controls src="/images/introductions/Solubility_and_Dissolution_Rate/230215/230215_oshite_sotsuken.mp3"></audio>
-                <img src="/images/introductions/Solubility_and_Dissolution_Rate/230215/230215_oshite_poster.jpg" alt="230215_oshite_poster">
+                <audio controls src="images/introductions/Solubility_and_Dissolution_Rate/230215/230215_oshite_sotsuken.mp3"></audio>
+                <img src="images/introductions/Solubility_and_Dissolution_Rate/230215/230215_oshite_poster.jpg" alt="230215_oshite_poster">
             </div>
         </div>
 
@@ -147,8 +147,8 @@
             <!-- popupの内容 -->
             <div class="popup-content">
                 <button class="popup-close close" >&times;</button>
-                <audio controls src="/images/introductions/Solubility_and_Dissolution_Rate/240318/240318_盛武_化学会発表練習動画.mp3"></audio>
-                <img src="/images/introductions/Solubility_and_Dissolution_Rate/240318/20240319_盛武_修正版.jpg" alt="20240319_盛武">
+                <audio controls src="images/introductions/Solubility_and_Dissolution_Rate/240318/240318_盛武_化学会発表練習動画.mp3"></audio>
+                <img src="images/introductions/Solubility_and_Dissolution_Rate/240318/20240319_盛武_修正版.jpg" alt="20240319_盛武">
             </div>
         </div>
 
@@ -172,8 +172,8 @@
             <!-- popupの内容 -->
             <div class="popup-content">
                 <button class="popup-close close" >&times;</button>
-                <audio controls src="/images/introductions/Solubility_and_Dissolution_Rate/240319/化学会_kuroda.mp3"></audio>
-                <img src="/images/introductions/Solubility_and_Dissolution_Rate/240319/化学会ポスター_kuroda_完成版.jpg" alt="化学会ポスター_kuroda">
+                <audio controls src="images/introductions/Solubility_and_Dissolution_Rate/240319/化学会_kuroda.mp3"></audio>
+                <img src="images/introductions/Solubility_and_Dissolution_Rate/240319/化学会ポスター_kuroda_完成版.jpg" alt="化学会ポスター_kuroda">
             </div>
         </div>
 
@@ -196,7 +196,7 @@
             <!-- popupの内容 -->
             <div class="popup-content">
                 <button class="popup-close close" >&times;</button>
-                <video src="/images/introductions/Solubility_and_Dissolution_Rate/201228/20201228_Kinoshita.mp4" controls></video>
+                <video src="images/introductions/Solubility_and_Dissolution_Rate/201228/20201228_Kinoshita.mp4" controls></video>
             </div>
         </div>
 

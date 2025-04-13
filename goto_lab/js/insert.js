@@ -1,13 +1,14 @@
 // const { response } = require("express");
 
+// introductionsの挿入はpopup.jsに
 // insert news
 document.addEventListener("DOMContentLoaded", function () {
     let N_list = document.getElementById("news");
     if (N_list === null) {
-        console.error("エラー: newsがロードできませんでした。");
+        console.error("エラー: newsがページに存在しません。");
         return;
     }
-    fetch("/insert_data/index-html/news.json")
+    fetch("insert_data/index-html/news.json")
         // 取得したデータをjsonに変換
         .then(response => response.json())
         .then(data => {
@@ -49,10 +50,10 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     let M_list = document.getElementById("mark");
     if (M_list === null) {
-        console.error("エラー: markがロードできませんでした。");
+        console.error("エラー: markがページに存在しません。");
         return;
     }
-    fetch("/insert_data/index-html/mark.json")
+    fetch("insert_data/index-html/mark.json")
         // 取得したデータをjsonに変換
         .then(response => response.json())
         .then(data => {
@@ -100,4 +101,63 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 });
 
-// introductionsの挿入はpopup.jsに
+document.addEventListener("DOMContentLoaded", function () {
+    const fetches = [
+        loadSection("insert_data/publications/publication.html", 'publication'),
+        loadSection("insert_data/publications/publication_jpn.html", 'publication_jpn'),
+        loadSection("insert_data/publications/publication_old.html", 'publication_old'),
+
+        loadSection("insert_data/conference/conference_now.html", 'conference_now'),
+        loadSection("insert_data/conference/conference_old.html", 'conference_old')
+
+        // loadSection("insert_data/TimeIsValuable.html", 'TimeIsValuable'),
+        // loadSection("insert_data/ResearchWork.html", 'ResearchWork'),
+        // loadSection("insert_data/ObjectsGoals.html", 'ObjectsGoals')
+    ];
+
+    Promise.all(fetches).then(() => {
+        console.log('すべてのセクションのロードが完了しました');
+    });
+});
+
+// publication and conference
+function loadSection(url, sectionId) {
+    return fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                console.error(`エラー: ${url} がロードできませんでした。`);
+            }
+            return response.text();
+        })
+        .then(data => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, 'text/html');
+            const section = doc.querySelector(`#${sectionId}`);
+
+            if (section) {
+                console.log(`${sectionId}が見つかりました`);
+                document.getElementById(sectionId).innerHTML = section.innerHTML;
+            } else {
+                console.error(`対応するidセクション #${sectionId} が見つかりませんでした。`);
+            }
+        })
+        .catch(error => console.error(`エラーが発生しました: ${error.message}`));
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    let M_list = document.getElementById("conference_now");
+    if (M_list === null) {
+        console.error("エラー: conference_nowがページに存在しません。");
+        return;
+    }
+    fetch("insert_data/conference/conference_now.json")
+        .then(response => response.json())
+        .then(data => {
+            data.conferenceList.forEach((cList, index) => {
+                data.cList.forEach((yearList, index) => {
+                    let li = document.createElement("il");
+
+                })
+            })
+        });
+});

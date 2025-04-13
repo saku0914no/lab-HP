@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUS: Goto Lab</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/nav.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/ol_list.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" type="text/css" media="all">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="humberger"></div>
+    <main>
+        <div id="PCnav"></div>
+        <!----------------------------------------------------------------------------------------------------------->
+        <article>
+            <h2 data-en="Articles">論文リスト</h2>
+
+            <section>
+                <p>
+                    <a href="https://tus.elsevierpure.com/ja/persons/satoru-goto/publications/" class="link"
+                        target="_blank" rel="noopener noreferrer">
+                        SCOPUS Citation counters (TUS@Elsevire).
+                    </a> /
+                    <a href="https://researchmap.jp/saturn.510/published_papers" class="link" target="_blank"
+                        rel="noopener noreferrer">
+                        List of our published papers (@researmap).
+                    </a> /
+                    <a href="https://scholar.google.co.jp/citations?user=MBsONkUAAAAJ" class="link" target="_blank"
+                        rel="noopener noreferrer">Google Scholar</a>
+                </p>
+
+                <div>
+                    <div id="publication"></div>
+                    <div id="publication_jpn"></div>
+                </div>
+                <div>
+                    <button class="switch" id="publication_old_btn">クリックで2011年以前の出版物を表示</button>
+                    <div id="publication_old" style="display: none;"></div>
+                </div>
+            </section>
+        </article>
+        <!----------------------------------------------------------------------------------------------------------->
+    </main>
+    <button ID="page_top_btn">ページ上部へ</button>
+
+    <div id="footer"></div>
+    <script src="js/script.js"></script>
+    <script src="js/insert.js"></script>
+</body>
+
+</html>

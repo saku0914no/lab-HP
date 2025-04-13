@@ -8,10 +8,17 @@
 }
 
 .scroll {
-    height: calc(500px - 20vw);
-    padding: 20px 5vw;
+    /* height: calc(500px - 20vw); */
+    height: 500px;
+    padding: 20px 3vw;
     border: solid 1px black;
     overflow-y: scroll;
+}
+#mark.scroll {
+    height: 700px;
+}
+#mark span {
+    padding-left: 4px;
 }
 
 article li {

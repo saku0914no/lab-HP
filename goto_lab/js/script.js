@@ -1,6 +1,6 @@
 // insert header and footer and nav
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("/insert_data/header_and_footer.html")
+    fetch("insert_data/header_and_footer.html")
         .then(response => response.text())
         .then(data => {
             // DOMParser = 文字列を解析するツール

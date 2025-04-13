@@ -1,38 +1,36 @@
 // insert introductions
 document.addEventListener("DOMContentLoaded", function () {
-    if (window.location.pathname !== "/introduction.html") {
-        console.error("ページが異なるためintroductionを読み込みませんでした。");
-        popup();
-        return;
-    }
-
+    // if (window.location.pathname !== "introduction.html") {
+    //     console.error("ページが異なるためintroductionを読み込みませんでした。");
+    //     popup();
+    //     return;
+    // }
     let introList = {
         // Solubility and Dissolution Rate
         SaDR: {
-            link: "/insert_data/introductions/Solubility_and_Dissolution_Rate.html",
+            link: "insert_data/introductions/Solubility_and_Dissolution_Rate.html",
             originID: "#SaDR",
             recipient: "SolubilityAndDissolutionRate"
         },
         // Supramolecular Complex of Cyclodextrins
         SCoC: {
-            link: "/insert_data/introductions/Supramolecular_Complex_of_Cyclodextrins.html",
+            link: "insert_data/introductions/Supramolecular_Complex_of_Cyclodextrins.html",
             originID: "#SCoC",
             recipient: "SupramolecularComplexOfCyclodextrins"
         },
         // Membranes and Active Oxygens
         MaAO: {
-            link: "/insert_data/introductions/Membranes_and_Active_Oxygens.html",
+            link: "insert_data/introductions/Membranes_and_Active_Oxygens.html",
             originID: "#MaAO",
             recipient: "MembranesAndActiveOxygens"
         },
         // Proteins and Amyloids
         PaA: {
-            link: "/insert_data/introductions/Proteins_and_Amyloids.html",
+            link: "insert_data/introductions/Proteins_and_Amyloids.html",
             originID: "#PaA",
             recipient: "ProteinsAndAmyloids"
         }
     }
-    // const fetchPromises = 
     Object.values(introList).forEach(item => {
         fetch(item.link)
             .then(response => response.text())
@@ -47,11 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.error(`エラー: ${item.link} の取得に失敗しました。`, error);
             });
     });
-
-    // Promise.all(fetchPromises)
-    //     .then(()=> {
-    //         popup();
-    //     });
+    popup();
 });
 
 // popup

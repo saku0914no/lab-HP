@@ -82,13 +82,6 @@
     border: 5px solid white;
 }
 
-/* supplement */
-.supplement {
-    font-size: 0.8rem;
-    color: #7d7d7d;
-    margin: 3px 10px 30px;
-}
-
 /* 参考文献 */
 .literature {
     max-width: 90%;
