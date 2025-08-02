@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //     popup();
     //     return;
     // }
+
     let introList = {
         // Solubility and Dissolution Rate
         SaDR: {
@@ -31,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
             recipient: "ProteinsAndAmyloids"
         }
     }
+    // const fetchPromises = 
     Object.values(introList).forEach(item => {
         fetch(item.link)
             .then(response => response.text())
@@ -46,6 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     });
     popup();
+    // Promise.all(fetchPromises)
+    //     .then(()=> {
+    //         popup();
+    //     });
 });
 
 // popup

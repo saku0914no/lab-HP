@@ -1,8 +1,35 @@
 {
     "newsList": [
         {
+            "date": "2025/07/26",
+            "newsContent": "桑島 航さん2報目の研究成果がプレプリント掲示板",
+            "linkText": "ChemR&chi;iv",
+            "linkURL": "https://chemrxiv.org/engage/chemrxiv/public-dashboard",
+            "newsContent2": "で公開されました. （現状未査読）",
+            "linkText2": "Amendment in Singular Value Decomposition Approach for Ftir Spectra of Heat-Treated Indomethacin–Cimetidine Mixture: Study of Solid Intermolecular Interaction",
+            "linkURL2": "https://doi.org/10.26434/chemrxiv-2025-k5zbp"
+        },
+        {
+            "date": "2025/05/15",
+            "newsContent": "黒澤 裕哉さん3報目の研究成果が",
+            "linkText": "Colloids and Surfaces B: Biointerfaces",
+            "linkURL": "https://www.sciencedirect.com/journal/colloids-and-surfaces-b-biointerfaces",
+            "newsContent2": "誌 (IF 5.4) にアクセプト。",
+            "linkText2": "Triton X-100 modulates lipid bilayer fluidity in opposing ways at the hydrophilic interface and hydrophobic interior, hindering water transport",
+            "linkURL2": "https://doi.org/10.1016/j.colsurfb.2025.114807"
+        },
+        {
+            "date": "2025/03/03",
+            "newsContent": "古賀 遼太郎さん2報目の研究成果がプレプリント掲示板",
+            "linkText": "SSRN",
+            "linkURL": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5004694",
+            "newsContent2": "で公開されました. （現状未査読）",
+            "linkText2": "The Dissolving Behaviors of Analgesics and Diltiazem Studied by Electrochemical Impedance Spectroscopy, Diffusion-Ordered Spectroscopy, and Molecular Computation",
+            "linkURL2": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5237335"
+        },
+        {
             "date": "2025/01/02",
-            "newsContent": "盛武航太さんの研究成果が",
+            "newsContent": "盛武 航太さんの研究成果が",
             "linkText": "International Journal of Pharmaceutics",
             "linkURL": "https://www.sciencedirect.com/journal/international-journal-of-pharmaceutics",
             "newsContent2": "誌 (IF 5.3) にアクセプト。",
@@ -11,7 +38,7 @@
         },
         {
             "date": "2024/12/27",
-            "newsContent": "堀住祐介さん2報目の研究成果が",
+            "newsContent": "堀住 祐介さん2報目の研究成果が",
             "linkText": "ACS Chemical Neuroscience",
             "linkURL": "https://pubs.acs.org/journal/acncdm",
             "newsContent2": "誌 (IF 4.2) にアクセプト。",
@@ -20,7 +47,7 @@
         },
         {
             "date": "2024/12/23",
-            "newsContent": "黒田千尋さんの研究成果が",
+            "newsContent": "黒田 千尋さんの研究成果が",
             "linkText": "Langmuir",
             "linkURL": "https://pubs.acs.org/journal/langd5",
             "newsContent2": "誌 (IF 3.7) に暫定アクセプト。(2024/12/30 書式修正後正式アクセプト)",
@@ -29,7 +56,7 @@
         },
         {
             "date": "2024/11/16",
-            "newsContent": "古賀遼太郎さんの研究成果が",
+            "newsContent": "古賀 遼太郎さんの研究成果が",
             "linkText": "Materials Chemistry and Physics",
             "linkURL": "https://www.sciencedirect.com/journal/materials-chemistry-and-physics",
             "newsContent2": "誌 (IF 4.3) にアクセプト。",
@@ -37,17 +64,8 @@
             "linkURL2": "https://doi.org/10.1016/j.matchemphys.2024.130158"
         },
         {
-            "date": "2024/10/02",
-            "newsContent": "",
-            "linkText": "古賀遼太郎さんの論文プレプリントが公開。",
-            "linkURL": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4974579",
-            "newsContent2": "",
-            "linkText2": "",
-            "linkURL2": ""
-        },
-        {
             "date": "2024/11/06",
-            "newsContent": "高塚美和さん3報目の研究成果が",
+            "newsContent": "高塚 美和さん3報目の研究成果が",
             "linkText": "Journal of Photochemistry and Photobiology, A: Chemistry",
             "linkURL": "https://www.sciencedirect.com/journal/journal-of-photochemistry-and-photobiology-a-chemistry",
             "newsContent2": "誌 (IF 4.1) にアクセプト。",
@@ -55,17 +73,8 @@
             "linkURL2": "https://doi.org/10.1016/j.jphotochem.2024.116142"
         },
         {
-            "date": "2024/09/05",
-            "newsContent": "",
-            "linkText": "高塚美和さんの論文プレプリントが公開。",
-            "linkURL": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4947981",
-            "newsContent2": "",
-            "linkText2": "",
-            "linkURL2": ""
-        },
-        {
             "date": "2024/10/27",
-            "newsContent": "藤田萌々子さん2報目の研究成果が",
+            "newsContent": "藤田 萌々子さん2報目の研究成果が",
             "linkText": "International Journal of Pharmaceutics",
             "linkURL": "https://www.sciencedirect.com/journal/international-journal-of-pharmaceutics",
             "newsContent2": "誌 (IF 5.3) にアクセプト。",
@@ -74,12 +83,21 @@
         },
         {
             "date": "2024/10/11",
-            "newsContent": "鶴元辰伍さんが第45回生体膜と薬物の相互作用シンポジウムにて優秀ポスター発表賞を受賞",
+            "newsContent": "鶴元 辰伍さんが第45回生体膜と薬物の相互作用シンポジウムにて優秀ポスター発表賞を受賞",
             "linkText": "第45回生体膜と薬物の相互作用シンポジウムサイト",
             "linkURL": "https://drive.google.com/file/d/195g_-M3gycBs0ws16va0b6VtvrbASRQ2/view",
             "newsContent2": "",
             "linkText2": "東京理科大学サイト ニュース&イベント",
             "linkURL2": "https://www.tus.ac.jp/today/archive/20241025_2484.html"
+        },
+        {
+            "date": "2024/10/02",
+            "newsContent": "古賀 遼太郎さんの研究成果がプレプリント掲示板",
+            "linkText": "SSRN",
+            "linkURL": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5004694",
+            "newsContent2": "で公開されました. （2024/11/16受理）",
+            "linkText2": "Physicochemical Properties of Diclofenac Regulated by its Intermolecular Interactions with Caffeine Evaluated Via Vector Space Model, Nuclear Magnetic Resonance, and Fourier-Transform Infrared Analyses",
+            "linkURL2": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4974579"
         },
         {
             "date": "2024/09/15",
@@ -91,8 +109,17 @@
             "linkURL2": "https://www.tus.ac.jp/today/archive/20240926_5286.html"
         },
         {
+            "date": "2024/09/05",
+            "newsContent": "高塚 美和さん3報目の研究成果がプレプリント掲示板",
+            "linkText": "SSRN",
+            "linkURL": "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5004694",
+            "newsContent2": "で公開されました. （2024/11/06受理）",
+            "linkText2": "Antioxidant Capacity of Edaravone, Quercetin, and Myricetin Involving Probabilistic Fluctuations Using Eosin-Y and Eosin-B as Fluorescent Probes in the Orac Assay",
+            "linkURL2": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4947981"
+        },
+        {
             "date": "2024/07/19",
-            "newsContent": "末永翔矢さん、片岡 洸さんの研究成果が ACS",
+            "newsContent": "末永 翔矢さん、片岡 洸さんの研究成果が ACS",
             "linkText": "Molecular Pharmaceutics",
             "linkURL": "https://pubs.acs.org/journal/mpohbp",
             "newsContent2": "誌 (IF 4.5) にアクセプト。",
@@ -110,7 +137,7 @@
         },
         {
             "date": "2024/05/19",
-            "newsContent": "長谷川寛治さん、小川沙羅さんの研究成果が",
+            "newsContent": "長谷川 寛治さん、小川沙羅さんの研究成果が",
             "linkText": "RSC Pharmaceutics",
             "linkURL": "https://www.rsc.org/journals-books-databases/about-journals/rsc-pharmaceutics",
             "newsContent2": "誌 (新設) にアクセプト。",
@@ -154,17 +181,8 @@
             "linkURL2": "https://doi.org/10.1039/D3RA08481G"
         },
         {
-            "date": "2024/01/11",
-            "newsContent": "長谷川 寛治さんの論文が",
-            "linkText": "Publonsにポストされています",
-            "linkURL": "https://publons.com/wos-op/review/22481991/",
-            "newsContent2": "",
-            "linkText2": "",
-            "linkURL2": ""
-        },
-        {
             "date": "2023/11/27",
-            "newsContent": "古賀遼太郎さんがAFPS Conference 2023にてOutstanding Student Poster Presentation Awardを受賞",
+            "newsContent": "古賀 遼太郎さんがAFPS Conference 2023にてOutstanding Student Poster Presentation Awardを受賞",
             "linkText": "東京理科大学サイト ニュース&イベント",
             "linkURL": "https://www.tus.ac.jp/today/archive/20231116_6573.html",
             "newsContent2": "",
@@ -172,26 +190,8 @@
             "linkURL2": ""
         },
         {
-            "date": "2023/06/20",
-            "newsContent": "鶴島 みのりさんの論文が",
-            "linkText": "Xにポストされています",
-            "linkURL": "https://x.com/PhiLifeSciences/status/1671117706052128769",
-            "newsContent2": "",
-            "linkText2": "",
-            "linkURL2": ""
-        },
-        {
-            "date": "2023/04/28",
-            "newsContent": "堀住 祐介さんの論文が",
-            "linkText": "Xにポストされています",
-            "linkURL": "https://x.com/PhiLifeSciences/status/1651721158734254080",
-            "newsContent2": "",
-            "linkText2": "",
-            "linkURL2": ""
-        },
-        {
             "date": "2022/09/30",
-            "newsContent": "黒澤祐哉さんがAdvances in Engineering社の「Key Scientific Article」に選出",
+            "newsContent": "黒澤 祐哉さんがAdvances in Engineering社の「Key Scientific Article」に選出",
             "linkText": "Advances in Engineering社サイト",
             "linkURL": "https://advanceseng.com/increased-selectivity-sodium-deoxycholate-tryptophan213-bovine-serum-albumin-micellization-revealed-singular-value-decomposition-excitation-emission-matrix/",
             "newsContent2": "",
@@ -200,7 +200,7 @@
         },
         {
             "date": "2022/07/25",
-            "newsContent": "黒澤祐哉さん、角田千祐さんが9th International Postgraduate Conference on Pharmaceutical Sciences 2022においてThe best oral presentation awardを受賞",
+            "newsContent": "黒澤 祐哉さん、角田千祐さんが9th International Postgraduate Conference on Pharmaceutical Sciences 2022においてThe best oral presentation awardを受賞",
             "linkText": "東京理科大学サイト ニュース&イベント",
             "linkURL": "https://www.tus.ac.jp/today/archive/20220711_5829.html",
             "newsContent2": "",
@@ -209,7 +209,7 @@
         },
         {
             "date": "2021/10/11",
-            "newsContent": "角田千祐さんが第65回日本薬学会関東支部大会において優秀ポスター発表賞を受賞",
+            "newsContent": "角田 千祐さんが第65回日本薬学会関東支部大会において優秀ポスター発表賞を受賞",
             "linkText": "日本薬学会関東支部会サイト",
             "linkURL": "https://shibu.pharm.or.jp/kanto/shibutaikai_65/contents/info_yuushuu.html",
             "newsContent2": "",
@@ -218,7 +218,7 @@
         },
         {
             "date": "2020/09/19",
-            "newsContent": "木下貴冬さんが第64回日本薬学会関東支部大会において優秀ポスター発表賞を受賞",
+            "newsContent": "木下 貴冬さんが第64回日本薬学会関東支部大会において優秀ポスター発表賞を受賞",
             "linkText": "第64回日本薬学会関東支部大会サイト",
             "linkURL": "https://shibu.pharm.or.jp/kanto/shibutaikai_64/info_yuushuu.html",
             "newsContent2": "",
@@ -227,7 +227,7 @@
         },
         {
             "date": "2020/09/19",
-            "newsContent": "白鳥友貴さんが第64回日本薬学会関東支部大会において参加者相互推薦型優秀口頭発表賞を受賞",
+            "newsContent": "白鳥 友貴さんが第64回日本薬学会関東支部大会において参加者相互推薦型優秀口頭発表賞を受賞",
             "linkText": "第64回日本薬学会関東支部大会サイト",
             "linkURL": "https://shibu.pharm.or.jp/kanto/shibutaikai_64/info_yuushuu.html",
             "newsContent2": "",
@@ -236,7 +236,7 @@
         },
         {
             "date": "2019/05/13",
-            "newsContent": "藤田萌々子さんが日本薬学会第139年会において学生優秀発表賞 (ポスター発表の部) を受賞",
+            "newsContent": "藤田 萌々子さんが日本薬学会第139年会において学生優秀発表賞 (ポスター発表の部) を受賞",
             "linkText": "日本薬学会年会サイト",
             "linkURL": "http://nenkai.pharm.or.jp/139/web/prize.html",
             "newsContent2": "",
