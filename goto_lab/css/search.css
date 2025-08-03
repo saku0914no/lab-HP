@@ -2,16 +2,38 @@
     padding: 0 10px;
     border: solid 1px black;
 }
+
 #searchButton {
     color: #fff;
     background-color: #142164;
     padding: 3px 10px;
     border-radius: 5px;
 }
+
 .search-box {
     margin: 20px;
 }
-tr, td {
+small {
+    font-size: 0.8em;
+    margin: 0 10px;
+}
+
+.name-list {
+    overflow-x: auto;
+    border: solid 1px black;
+    width: 99%;
+}
+
+.name-list table {
+    border-collapse: collapse;
+}
+
+tr,
+td {
     padding: 5px;
     border: solid 1px black;
+}
+
+#searchResult {
+    margin: 15px;
 }

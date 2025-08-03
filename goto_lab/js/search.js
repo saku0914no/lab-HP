@@ -9,7 +9,9 @@ document.getElementById('searchButton').addEventListener('click', function() {
 
     const searchResultsTitle = document.getElementById('searchResultsTitle');
     searchResultsTitle.textContent = `「${document.getElementById('searchInput').value}」の検索結果`;
-    searchResultsTitle.style.display = 'block';
+    
+    const searchResult = document.getElementById('searchResult');
+    searchResult.style.display = 'block';
 });
 
 // Enterキーで検索ボタンを押す処理
@@ -46,7 +48,6 @@ function searchInConference(orBlocks) {
             });
 
             title.textContent = `学会発表: ${itemLength}件`;
-            title.style.display = 'block';
         })
         .catch(err => console.error('データの読み込みに失敗しました - conference data:', err));
 }
@@ -77,7 +78,6 @@ function searchInPublication(orBlocks) {
             });
 
             title.textContent = `論文: ${itemLength}件`;
-            title.style.display = 'block';
         })
         .catch(err => console.error('データの読み込みに失敗しました - publication data:', err));
 }

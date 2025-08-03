@@ -8,6 +8,7 @@ main {
 }
 article {
     flex: 1;
+    min-width: 0;
 }
 section {
     padding: 1% 0;
