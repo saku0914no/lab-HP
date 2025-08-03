@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/nav.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/search.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/ol_list.css" type="text/css" media="all">
     <meta name="description" content="東京理科大学薬学部薬学科薬品物理化学研究室（後藤研究室）の公式サイトです。医薬品溶液が分子と会合コロイドの平衡状態となることを提唱しています。">
     <meta name="keywords"
         content="特異値分解（SVD）, 観測スペクトル行列（UV-vis,FTIR,蛍光,CD,XRPD,ESR,DSC）, 配置空間, トポロジー, スモールワールド（6次の隔たり）, 核磁気共鳴スペクトル（NMR）, 電子スピン共鳴（ESR, EPR）, フーリエ変換赤外線スペクトル(FTIR), 蛍光スペクトル分析, 蛍光異方性解析, 粉末エックス線回折分析（XRPD）, 示差走査熱分析（DSC）, アミロイド, リポソーム, 非ステロイド性消炎鎮痛薬（NSAIDs）, 局所麻酔薬, ヒスタミン受容体阻害薬, 日焼け止め">
@@ -81,21 +80,25 @@
         <article>
             <h2>学会発表・論文検索</h2>
 
-            <section>
+            <div>
                 <div class="search-box">
                     <input type="text" id="searchInput" placeholder="入力してください">
                     <button id="searchButton">検索</button>
+                    <a href="#name-list">名簿へ</a>
                 </div>
 
                 <div>
                     <h3 id="searchResultsTitle" style="display: none;"></h3>
-                    <p id="noResultsMessage" style="display: none;">結果がありません</p>
-                    <ol id="conferenceResults" class="search-results sample"></ol>
+                    <h3 id="conferenceTitle" style="display: none;"></h3>
+                    <ul id="conferenceResults" class="search-results sample"></ul>
+                    <h3 id="publicationTitle" style="display: none;"></h3>
+                    <ul id="publicationResults" class="search-results sample"></ul>
                 </div>
-            </section>
+            </div>
 
             <section>
-                <h4>名簿</h4>
+                <h3 id="name-list">名簿</h3>
+                <p>名前をクリックで検索</p>
 
                 <table>
                     <caption>2012-1025 研究室配属学生 (YP-6年制, YM-4年制, UG-学部, MC-修士, DC-博士)</caption>
@@ -107,118 +110,118 @@
                     <tr>
                         <th>2025</th>
                         <td rowspan="3">槌田智裕</td>
-                        <td data-name="小木曽礼奈">YP4 小木曽礼奈 Reina_Kogiso</td>
-                        <!-- <td data-name="田中克実">YP4 田中克実 Katsumi_Tanaka</td> -->
-                        <td data-name="中園鴻志">YM4 中園鴻志 Kohji_Nakazono</td>
-                        <td data-name="菊川七海">YM4 菊川七海 Nanami_Kikukawa</td>
-                        <td data-name="畑朝陽">YM4 畑_朝陽 Asahi_Hata</td>
+                        <td data-name="小木曽 礼奈 or Reina Kogiso">YP4 小木曽礼奈 Reina_Kogiso</td>
+                        <!-- <td data-name="田中 克実 or Katsumi Tanaka">YP4 田中克実 Katsumi_Tanaka</td> -->
+                        <td data-name="中園 鴻志 or Kohji Nakazono">YM4 中園鴻志 Kohji_Nakazono</td>
+                        <td data-name="菊川 七海 or Nanami Kikukawa">YM4 菊川七海 Nanami_Kikukawa</td>
+                        <td data-name="畑 朝陽 or Asahi Hata">YM4 畑_朝陽 Asahi_Hata</td>
                     </tr>
                     <tr>
                         <th>2024</th>
-                        <td data-name="粉川小雪">YM4 粉川小雪 Koyuki_Kokawa</td>
-                        <td data-name="棚田怜央">YM4 棚田怜央 Reo_Tanada</td>
+                        <td data-name="粉川 小雪 or Koyuki Kokawa">YM4 粉川小雪 Koyuki_Kokawa</td>
+                        <td data-name="棚田 怜央 or Reo Tanada">YM4 棚田怜央 Reo_Tanada</td>
                     </tr>
                     <tr>
                         <th>2023</th>
-                        <td data-name="石黒雅央">YP4 石黒雅央 Masahiro_Ishiguro</td>
-                        <td data-name="黒田千尋">YM4 黒田千尋 Chihiro_Kuroda (UG卒)</td>
-                        <td data-name="鶴元辰伍">YM4 鶴元辰伍 Shingo_Tsurumoto</td>
+                        <td data-name="石黒 雅央 or Masahiro Ishiguro">YP4 石黒雅央 Masahiro_Ishiguro</td>
+                        <td data-name="黒田 千尋 or Chihiro Kuroda">YM4 黒田千尋 Chihiro_Kuroda (UG卒)</td>
+                        <td data-name="鶴元 辰伍 or Shingo Tsurumoto">YM4 鶴元辰伍 Shingo_Tsurumoto</td>
                     </tr>
                     <tr>
                         <th>2022</th>
                         <td rowspan="5">大塚裕太</td>
-                        <td data-name="押手優紀子">YM4 押手優紀子 Yukiko_Oshite (UG卒)</td>
-                        <td data-name="川畑隼土">YM3 川畑隼土 Shoto_Kawabata</td>
-                        <td data-name="木村里彩">YM4 木村里彩 Risa_Kimura (to 花輪研/MC)</td>
-                        <td data-name="盛武航太">YM4 盛武航太 Kota_Moritake</td>
-                        <td data-name="南出恵">YP4 南出_恵 Megumi_Minamide</td>
+                        <td data-name="押手 優紀子 or Yukiko Oshite">YM4 押手優紀子 Yukiko_Oshite (UG卒)</td>
+                        <td data-name="川畑 隼土 or Shoto Kawabata">YM3 川畑隼土 Shoto_Kawabata</td>
+                        <td data-name="木村 里彩 or Risa Kimura">YM4 木村里彩 Risa_Kimura (to 花輪研/MC)</td>
+                        <td data-name="盛武 航太 or Kota Moritake">YM4 盛武航太 Kota_Moritake</td>
+                        <td data-name="南出 恵 or Megumi Minamide">YP4 南出_恵 Megumi_Minamide</td>
                     </tr>
                     <tr>
                         <th>2021</th>
-                        <td data-name="奥村勇太">YP4 奥村勇太 Yuta_Okumura</td>
-                        <td data-name="古賀遼太郎">YM4 古賀遼太郎 Ryotaro_Koga</td>
-                        <td data-name="後藤佑彰">YP4 後藤佑彰 Yuki_Goto</td>
-                        <td data-name="砂田佐恵">YM4 砂田佐恵 Sae_Sunada (to 山下研/MC)</td>
-                        <td data-name="堀住祐介">YM4 堀住祐介 Yusuke_Horizumi</td>
-                        <td data-name="長谷川寛治">YM4 長谷川寛治 Kanji_Hasegawa</td>
-                        <td data-name="劉一帥">YP5 劉_一帥 Isshu_Liu (from 東研)</td>
+                        <td data-name="奥村 勇太 or Yuta Okumura">YP4 奥村勇太 Yuta_Okumura</td>
+                        <td data-name="古賀 遼太郎 or Ryotaro Koga">YM4 古賀遼太郎 Ryotaro_Koga</td>
+                        <td data-name="後藤 佑彰 or Yuki Goto">YP4 後藤佑彰 Yuki_Goto</td>
+                        <td data-name="砂田 佐恵 or Sae Sunada">YM4 砂田佐恵 Sae_Sunada (to 山下研/MC)</td>
+                        <td data-name="堀住 祐介 or Yusuke Horizumi">YM4 堀住祐介 Yusuke_Horizumi</td>
+                        <td data-name="長谷川 寛治 or Kanji Hasegawa">YM4 長谷川寛治 Kanji_Hasegawa</td>
+                        <td data-name="劉 一帥 or Isshu Liu">YP5 劉_一帥 Isshu_Liu (from 東研)</td>
                     </tr>
                     <tr>
                         <th>2020</th>
-                        <td data-name="宇佐美友幸子">YP4 宇佐美友幸子 Yukiko_Usami (UG中退)</td>
-                        <td data-name="黒澤祐哉">YM4 黒澤祐哉 Yuya_Kurosawa</td>
-                        <td data-name="角田千祐">YM4 角田千祐 Chihiro_Tsunoda</td>
-                        <td data-name="三ツ谷健吾">MC1 三ツ谷健吾 Kengo_Mitsuya （from 花輪研）</td>
+                        <td data-name="宇佐美 友幸子 or Yukiko Usami">YP4 宇佐美友幸子 Yukiko_Usami (UG中退)</td>
+                        <td data-name="黒澤 祐哉 or Yuya Kurosawa">YM4 黒澤祐哉 Yuya_Kurosawa</td>
+                        <td data-name="角田 千祐 or Chihiro Tsunoda">YM4 角田千祐 Chihiro_Tsunoda</td>
+                        <td data-name="三ツ谷 健吾 or Kengo Mitsuya">MC1 三ツ谷健吾 Kengo_Mitsuya （from 花輪研）</td>
                     </tr>
                     <tr>
                         <th>2019</th>
-                        <td data-name="伊東理絵">DC1 伊東理絵 Rie_Ito</td>
-                        <td data-name="末永翔矢">YM4 末永翔矢 Shoya_Suenaga</td>
-                        <td data-name="鈴木有美香">YP4 鈴木有美香 Yumika_Suzuki</td>
-                        <td data-name="白鳥友貴">YM4 白鳥友貴 Tomoki_Shiratori</td>
-                        <td data-name="高塚美和">YM4 高塚美和 Miwa_Takatsuka</td>
-                        <td data-name="弘重涼介">YM4 弘重涼介 Ryosuke_Hiroshige</td>
+                        <td data-name="伊東 理絵 or Rie Ito">DC1 伊東理絵 Rie_Ito</td>
+                        <td data-name="末永 翔矢 or Shoya Suenaga">YM4 末永翔矢 Shoya_Suenaga</td>
+                        <td data-name="鈴木 有美香 or Yumika Suzuki">YP4 鈴木有美香 Yumika_Suzuki</td>
+                        <td data-name="白鳥 友貴 or Tomoki Shiratori">YM4 白鳥友貴 Tomoki_Shiratori</td>
+                        <td data-name="高塚 美和 or Miwa Takatsuka">YM4 高塚美和 Miwa_Takatsuka</td>
+                        <td data-name="弘重 涼介 or Ryosuke Hiroshige">YM4 弘重涼介 Ryosuke_Hiroshige</td>
                     </tr>
                     <tr>
                         <th>2018</th>
-                        <td data-name="櫟梨沙">YP4 櫟_梨沙 Risa_Ichii</td>
-                        <td data-name="木下貴冬">YM4 木下貴冬 Takatoshi_Kinoshita</td>
-                        <td data-name="朱凱茜">YM4 朱_凱茜 Gaisei_Shu (Hoiqian_Chu) (UG卒)</td>
-                        <td data-name="鶴島みのり">YP4 鶴島みのり Minori_Tsurushima</td>
-                        <td data-name="名和大識">YP4 名和大識 Daishi_Nawa (UG中退)</td>
+                        <td data-name="櫟 梨沙 or Risa Ichii">YP4 櫟_梨沙 Risa_Ichii</td>
+                        <td data-name="木下 貴冬 or Takatoshi Kinoshita">YM4 木下貴冬 Takatoshi_Kinoshita</td>
+                        <td data-name="朱 凱茜 or Gaisei Shu">YM4 朱_凱茜 Gaisei_Shu (Hoiqian_Chu) (UG卒)</td>
+                        <td data-name="鶴島 みのり or Minori Tsurushima">YP4 鶴島みのり Minori_Tsurushima</td>
+                        <td data-name="名和 大識 or Daishi Nawa">YP4 名和大識 Daishi_Nawa (UG中退)</td>
                     </tr>
                     <tr>
                         <th>2017</th>
                         <td rowspan="5">島田洋輔</td>
-                        <td data-name="相場大地">YM4 相場大地 Daichi_Aiba (MC2中退)</td>
-                        <td data-name="藤田萌々子">YM4 藤田萌々子 Momoko_Fujita</td>
-                        <td data-name="松本佳子">YM4 松本佳子 Yoshiko_Matsumoto (UG中退)</td>
+                        <td data-name="相場 大地 or Daichi Aiba">YM4 相場大地 Daichi_Aiba (MC2中退)</td>
+                        <td data-name="藤田 萌々子 or Momoko Fujita">YM4 藤田萌々子 Momoko_Fujita</td>
+                        <td data-name="松本 佳子 or Yoshiko Matsumoto">YM4 松本佳子 Yoshiko_Matsumoto (UG中退)</td>
                     </tr>
                     <tr>
                         <th>2016</th>
-                        <td data-name="笠井崇央">YM4 笠井崇央 Takafumi_Kasai</td>
-                        <td data-name="小林拳志郎">YP4 小林拳志郎 Kenshiro_Kobayashi</td>
-                        <td data-name="齊藤耕太">YP6 齊藤耕太 Kota_Saito (from 牧野研)</td>
-                        <td data-name="阪口知代">YP4 阪口知代 Tomoyo_Sakaguchi</td>
-                        <td data-name="清水翔太">YM4 清水翔太 Shota_Shmizu</td>
-                        <td data-name="茶谷仁">YM4 茶谷_仁 Hitoshi_Chatani</td>
-                        <td data-name="堀内智史">YM4 堀内智史 Satoshi_Horiuchi (UG卒)</td>
+                        <td data-name="笠井 崇央 or Takafumi Kasai">YM4 笠井崇央 Takafumi_Kasai</td>
+                        <td data-name="小林 拳志郎 or Kenshiro Kobayashi">YP4 小林拳志郎 Kenshiro_Kobayashi</td>
+                        <td data-name="齊藤 耕太 or Kota Saito">YP6 齊藤耕太 Kota_Saito (from 牧野研)</td>
+                        <td data-name="阪口 知代 or Tomoyo Sakaguchi">YP4 阪口知代 Tomoyo_Sakaguchi</td>
+                        <td data-name="清水 翔太 or Shota Shmizu">YM4 清水翔太 Shota_Shmizu</td>
+                        <td data-name="茶谷 仁 or Hitoshi Chatani">YM4 茶谷_仁 Hitoshi_Chatani</td>
+                        <td data-name="堀内 智史 or Satoshi Horiuchi">YM4 堀内智史 Satoshi_Horiuchi (UG卒)</td>
                     </tr>
                     <tr>
                         <th>2015</th>
-                        <td data-name="片原裕太">YM4 片原裕太 Yuta_Katahara (UG卒)</td>
-                        <td data-name="菊池美沙">YP4 菊池美沙 Misa_Kikuchi</td>
-                        <td data-name="桑島航">YM4 桑島_航 Wataru_Kuwashima</td>
-                        <td data-name="三枝好聖">YM4 三枝好聖 Yoshimasa_Saegusa (to 佐藤研/MC)</td>
-                        <td data-name="塩野香菜子">YP4 塩野香菜子 Kanako_Shiono</td>
-                        <td data-name="寶彩香">YM4 寶_彩香 Ayaka_Takara</td>
-                        <td data-name="平井絢子">YM4 平井絢子 Ayako_Hirai</td>
-                        <td data-name="南賀子">YP4 南_賀子 Yoshiko_Minami</td>
+                        <td data-name="片原 裕太 or Yuta Katahara">YM4 片原裕太 Yuta_Katahara (UG卒)</td>
+                        <td data-name="菊池 美沙 or Misa Kikuchi">YP4 菊池美沙 Misa_Kikuchi</td>
+                        <td data-name="桑島 航 or Wataru Kuwashima">YM4 桑島_航 Wataru_Kuwashima</td>
+                        <td data-name="三枝 好聖 or Yoshimasa Saegusa">YM4 三枝好聖 Yoshimasa_Saegusa (to 佐藤研/MC)</td>
+                        <td data-name="塩野 香菜子 or Kanako Shiono">YP4 塩野香菜子 Kanako_Shiono</td>
+                        <td data-name="寶 彩香 or Ayaka Takara">YM4 寶_彩香 Ayaka_Takara</td>
+                        <td data-name="平井 絢子 or Ayako Hirai">YM4 平井絢子 Ayako_Hirai</td>
+                        <td data-name="南 賀子 or Yoshiko Minami">YP4 南_賀子 Yoshiko_Minami</td>
                     </tr>
                     <tr>
                         <th>2014</th>
-                        <td data-name="片岡洸">YM4 片岡_洸 Hikaru_Kataoka</td>
-                        <td data-name="川上泰司">YP4 川上泰司 Taiji_Kawakami (to 和田研)</td>
-                        <td data-name="八巻康宏">YM4 八巻康宏 Yasuhiro_Yamaki (MC2中退)</td>
-                        <td data-name="李英鵬">DC2 李_英鵬 Li_Yingpeng (from 牧野研)</td>
-                        <td data-name="和田崇">YM4 和田_崇 Takashi_Wada</td>
+                        <td data-name="片岡 洸 or Hikaru Kataoka">YM4 片岡_洸 Hikaru_Kataoka</td>
+                        <td data-name="川上 泰司 or Taiji Kawakami">YP4 川上泰司 Taiji_Kawakami (to 和田研)</td>
+                        <td data-name="八巻 康宏 or Yasuhiro Yamaki">YM4 八巻康宏 Yasuhiro_Yamaki (MC2中退)</td>
+                        <td data-name="李 英鵬 or Li Yingpeng">DC2 李_英鵬 Li_Yingpeng (from 牧野研)</td>
+                        <td data-name="和田 崇 or Takashi Wada">YM4 和田_崇 Takashi_Wada</td>
                     </tr>
                     <tr>
                         <th>2013</th>
-                        <td data-name="奥山恵丞">YP4 奥山恵丞 Keisuke_Okuyama</td>
-                        <td data-name="遅沢周亮">YP4 遅沢周亮 Shuhei_Osozawa</td>
-                        <td data-name="榊義範">YM4 榊_義範 Yoshinori_Sakaki (UG卒)</td>
-                        <td data-name="大黒桃子">YM4 大黒桃子 Momoko_Daikoku (UG卒)</td>
-                        <td data-name="建内遼">YM4 建内_遼 Ryo_Tateuchi</td>
-                        <td data-name="田中優太">YM4 田中優太 Yuta_Tanaka</td>
-                        <td data-name="渡部晋平">YP4 渡部晋平 Shimpei_Watanabe</td>
+                        <td data-name="奥山 恵丞 or Keisuke Okuyama">YP4 奥山恵丞 Keisuke_Okuyama</td>
+                        <td data-name="遅沢 周亮 or Shuhei Osozawa">YP4 遅沢周亮 Shuhei_Osozawa</td>
+                        <td data-name="榊 義範 or Yoshinori Sakaki">YM4 榊_義範 Yoshinori_Sakaki (UG卒)</td>
+                        <td data-name="大黒 桃子 or Momoko Daikoku">YM4 大黒桃子 Momoko_Daikoku (UG卒)</td>
+                        <td data-name="建内 遼 or Ryo Tateuchi">YM4 建内_遼 Ryo_Tateuchi</td>
+                        <td data-name="田中 優太 or Yuta Tanaka">YM4 田中優太 Yuta_Tanaka</td>
+                        <td data-name="渡部 晋平 or Shimpei Watanabe">YP4 渡部晋平 Shimpei_Watanabe</td>
                     </tr>
                     <tr>
                         <th>2012</th>
                         <td>不在</td>
-                        <td data-name="飯島羽">YP4 飯島_羽 Tsubasa_Iijima</td>
-                        <td data-name="落合某">YM4 落合_某 Anonymous_Ochiai (to 牧野研)</td>
-                        <td data-name="佐川直輝">YM4 佐川直輝 Naoki_Sagawa (UG卒)</td>
+                        <td data-name="飯島 羽 or Tsubasa Iijima">YP4 飯島_羽 Tsubasa_Iijima</td>
+                        <td data-name="落合 某 or Anonymous Ochiai">YM4 落合_某 Anonymous_Ochiai (to 牧野研)</td>
+                        <td data-name="佐川 直輝 or Naoki Sagawa">YM4 佐川直輝 Naoki_Sagawa (UG卒)</td>
                     </tr>
                 </table>
             </section>
