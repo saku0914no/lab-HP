@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学会発表・論文検索 | TUS: Goto Lab</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/nav.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/search.css" type="text/css" media="all">
+    <meta name="description" content="東京理科大学薬学部薬学科薬品物理化学研究室（後藤研究室）の公式サイトです。医薬品溶液が分子と会合コロイドの平衡状態となることを提唱しています。">
+    <meta name="keywords" content="特異値分解（SVD）, 観測スペクトル行列（UV-vis,FTIR,蛍光,CD,XRPD,ESR,DSC）, 配置空間, トポロジー, スモールワールド（6次の隔たり）, 核磁気共鳴スペクトル（NMR）, 電子スピン共鳴（ESR, EPR）, フーリエ変換赤外線スペクトル(FTIR), 蛍光スペクトル分析, 蛍光異方性解析, 粉末エックス線回折分析（XRPD）, 示差走査熱分析（DSC）, アミロイド, リポソーム, 非ステロイド性消炎鎮痛薬（NSAIDs）, 局所麻酔薬, ヒスタミン受容体阻害薬, 日焼け止め">
+    <meta name="format-detection" content="telephone=no">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+    <!-- <link rel="apple-touch-icon" href="webclip.png"> -->
+    <meta property="og:site_name" content="学会発表・論文検索 | TUS: Goto Lab">
+    <meta property="og:url" content="https://www.rs.tus.ac.jp/goto_lab/search.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="学会発表・論文検索 | TUS: Goto Lab">
+    <meta property="og:description" content="東京理科大学薬学部薬学科薬品物理化学研究室（後藤研究室）の公式サイトです。医薬品溶液が分子と会合コロイドの平衡状態となることを提唱しています。">
+    <!-- <meta property="og:image" content="URL"> -->
+    <script type="application/ld+json">
+        [
+            {
+                "@context": "http://schema.org",
+                "@type": "Article",
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@id": "https://www.rs.tus.ac.jp/goto_lab/index.html",
+                                "name": "トップページ"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@id": "https://www.rs.tus.ac.jp/goto_lab/search.html",
+                                "name": "学会発表・論文検索 search"
+                            }
+                        }
+                    ]
+                },
+                "headline": "学会発表・論文検索 | TUS: Goto Lab",
+                "description": "東京理科大学薬学部薬学科薬品物理化学研究室（後藤研究室）の公式サイトです。医薬品溶液が分子と会合コロイドの平衡状態となることを提唱しています。",
+                "image": "",
+                "author": {
+                    "@type": "Person",
+                    "name": "後藤 了",
+                    "image": "サイト管理者画像",
+                    "url": "https://www.tus.ac.jp/ridai/doc/ji/RIJIA01Detail.php?act=&kin=ken&diu=6654"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "東京理科大学",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "ロゴ画像"
+                    }
+                },
+                "datePublished": "2024-11-01 00:00",
+                "dateModified": "2025-08-01 00:00"
+            }
+        ]
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="humberger"></div>
+    <main>
+        <div id="PCnav"></div>
+        <!----------------------------------------------------------------------------------------------------------->
+        <article>
+            <h2>学会発表・論文検索</h2>
+
+            <div>
+                <input type="text" id="searchInput" placeholder="入力してください">
+                <button id="searchButton">検索</button>
+            </div>
+
+            <div>
+                <h3 id="searchResultsTitle" style="display: none;"></h3>
+                <p id="noResultsMessage" style="display: none;">結果がありません</p>
+                <ol id="conferenceResults" class="search-results sample"></ol>
+            </div>
+
+        </article>
+        <!----------------------------------------------------------------------------------------------------------->
+    </main>
+    <button ID="page_top_btn">ページ上部へ</button>
+
+    <div id="footer"></div>
+    <script src="js/script.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>
