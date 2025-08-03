@@ -1,0 +1,17 @@
+#searchInput {
+    padding: 0 10px;
+    border: solid 1px black;
+}
+#searchButton {
+    color: #fff;
+    background-color: #142164;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.search-box {
+    margin: 20px;
+}
+tr, td {
+    padding: 5px;
+    border: solid 1px black;
+}
